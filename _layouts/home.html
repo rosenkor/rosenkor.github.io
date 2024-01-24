@@ -136,6 +136,15 @@ layout: default
                 {% endfor %}
                 </div>
               </div>
+              {% elsif section.name == "Research Interests" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+                <p><i>{{section.description}}</i></p>
+                <div class="list-group">
+                {% for topic in site.data.researchinterest %}
+                  <button type="button" class="list-group-item text-left">{{ topic.Topic }}</button>
+                {% endfor %}
+                </div>
+              </div>
             {% else %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
