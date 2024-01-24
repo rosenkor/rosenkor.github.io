@@ -6,33 +6,21 @@ description: I write about cyber threat intelligence
 header-img:  
 last-updated: 2020-10-30 5:55 PM
 ---
+<iframe id="responsive-iframe" src="https://rosenkorgrinnell.shinyapps.io/Baseball2/" style="border:none; width:1472.8px; height:823.25px; transform-origin:0 0;"></iframe>
+<script>
+  function scaleIframe() {
+    var iframe = document.getElementById('responsive-iframe');
+    var containerWidth = window.innerWidth;
+    var containerHeight = window.innerHeight;
+    var scaleX = containerWidth / 1472.8;
+    var scaleY = containerHeight / 823.25;
+    var scale = Math.min(scaleX, scaleY);
 
-<iframe id="responsive-iframe" src="https://rosenkorgrinnell.shinyapps.io/Baseball2/" style="border:none; width:1473px; height:823px; transform-origin: top left;"></iframe>
-<style>
-    /* Default scale for large devices */
-    #responsive-iframe {
-        transform: scale(1);
-    }
+    iframe.style.transform = 'scale(' + scale + ')';
+    iframe.style.width = 1472.8 / scale + 'px';
+    iframe.style.height = 823.25 / scale + 'px';
+  }
 
-    /* Smaller scale for medium-sized devices */
-    @media (max-width: 1200px) {
-        #responsive-iframe {
-            transform: scale(0.8);
-        }
-    }
-
-    /* Even smaller scale for small devices */
-    @media (max-width: 768px) {
-        #responsive-iframe {
-            transform: scale(0.6);
-        }
-    }
-
-    /* Tiny scale for extra small devices */
-    @media (max-width: 480px) {
-        #responsive-iframe {
-            transform: scale(0.4);
-        }
-    }
-</style>
-
+  window.onresize = scaleIframe;
+  window.onload = scaleIframe;
+</script>
