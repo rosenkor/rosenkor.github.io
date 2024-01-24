@@ -11,11 +11,21 @@ last-updated: 2020-10-30 5:55 PM
     <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
   </div>
 </div>
-<div class="manuscript-note">
-  <p>{{ site.data.references["2024Generative"].note }}</p>
-</div>
-{% bibliography -f papers %}
 
+
+<!-- Modify the citation format -->
+{% for entry in site.bibliography %}
+  {% assign authors = entry.author | split: ', ' %}
+  <div class="citation">
+    <p>{{ authors[0] }}</p>
+    <p>{{ entry.title }}</p>
+    <p>{{ entry.year }}</p>
+    <!-- Display the note if available -->
+    {% if entry.note %}
+      <p>{{ entry.note }}</p>
+    {% endif %}
+  </div>
+{% endfor %}
 
 
 
