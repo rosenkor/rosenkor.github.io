@@ -1,20 +1,32 @@
-- Course: Introduction to Artificial Intelligence (Advanced)
-  Number: COMP3608
-  School: University of Sydney
-  Semester: Spring 2023
-  id: COMP3608
-
 - Course: Advanced Seminar in Constitutional Law
   Number: POL319
   School: Grinnell College
   Semester: Spring 2024
   id: POL319
 
+- Course: Analysis of Algorithms
+  Number: CSC301
+  School: Grinnell College
+  Semester: Fall 2023
+  id: CSC301
+
 - Course: Constitutional Law and Politics
   Number: POL219
   School: Grinnell College
   Semester: Fall 2023
   id: POL219
+
+- Course: Bayesian Statistics
+  Number: STA340
+  School: Grinnell College
+  Semester: Fall 2023
+  id: STA340
+
+- Course: Introduction to Artificial Intelligence (Advanced)
+  Number: COMP3608
+  School: University of Sydney
+  Semester: Spring 2023
+  id: COMP3608
 
 - Course: Making Policy in Political Context
   Number: GOVT2941
@@ -34,24 +46,6 @@
   Semester: Fall 2022
   id: CSC341
 
-- Course: Analysis of Algorithms
-  Number: CSC301
-  School: Grinnell College
-  Semester: Fall 2023
-  id: CSC301
-
-- Course: Introduction to Data Science
-  Number: STA230
-  School: Grinnell College
-  Semester: Fall 2021
-  id: STA230
-
-- Course: Bayesian Statistics
-  Number: STA340
-  School: Grinnell College
-  Semester: Fall 2023
-  id: STA340
-
 - Course: Advanced Seminar on the U.S. Foreign Policymaking Process
   Number: POL352
   School: Grinnell College
@@ -69,6 +63,17 @@
   School: Grinnell College
   Semester: Spring 2022
   id: CSC207
+
+- Course: Introduction to Data Science
+  Number: STA230
+  School: Grinnell College
+  Semester: Fall 2021
+  id: STA230
+
+
+
+
+
 
 
 
