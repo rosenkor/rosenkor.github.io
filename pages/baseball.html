@@ -7,8 +7,32 @@ header-img:
 last-updated: 2020-10-30 5:55 PM
 ---
 
-<iframe src="https://rosenkorgrinnell.shinyapps.io/Baseball2/" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-</iframe>
+<iframe id="responsive-iframe" src="https://rosenkorgrinnell.shinyapps.io/Baseball2/" style="border:none; width:1473px; height:823px; transform-origin: top left;"></iframe>
+<style>
+    /* Default scale for large devices */
+    #responsive-iframe {
+        transform: scale(1);
+    }
 
+    /* Smaller scale for medium-sized devices */
+    @media (max-width: 1200px) {
+        #responsive-iframe {
+            transform: scale(0.8);
+        }
+    }
 
+    /* Even smaller scale for small devices */
+    @media (max-width: 768px) {
+        #responsive-iframe {
+            transform: scale(0.6);
+        }
+    }
+
+    /* Tiny scale for extra small devices */
+    @media (max-width: 480px) {
+        #responsive-iframe {
+            transform: scale(0.4);
+        }
+    }
+</style>
 
