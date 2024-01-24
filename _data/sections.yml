@@ -24,7 +24,7 @@
   url: projects.html
   first: false
 
-  - name: Research Interests
+- name: Research Interests
   id: researchinterest
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   content: 
