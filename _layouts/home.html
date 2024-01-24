@@ -135,12 +135,19 @@ layout: default
               {% endfor %}
               </div>
             </div>
-          {% elsif section.name == "Coursework" %}
-            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-              <p><i>{{section.description}}</i></p>
+            {% elsif section.name == "Coursework" %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
               <div class="list-group">
               {% for course in site.data.courses %}
-                <button type="button" class="list-group-item text-left">{{ course.Course }}</button>
+              <div class="list-group">
+                <div class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{ course.School }}</h5>
+                    <p>{{course.Number}}: {{course.Course }}</p>
+                    <small>{{course.Semester}}</small>
+                  </div>
+                </div>
+              </div>
               {% endfor %}
               </div>
             </div>

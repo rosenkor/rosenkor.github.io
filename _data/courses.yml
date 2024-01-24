@@ -1,17 +1,86 @@
-- Course: POL 554 International Security Studies
-  Program: School of Public and International Affairs  
-  School: Harvard
-  id: POL554
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  link: https://example.com
+- Course: Introduction to Artificial Intelligence (Advanced)
+  Number: COMP3608
+  School: University of Sydney
+  Semester: Spring 2023
+  id: COMP3608
 
-- Course: POL 585 International Political Economy
-  Program: School of Public and International Affairs
-  School: Harvard
-  id: POL585
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  link: https://example.com
+- Course: Advanced Seminar in Constitutional Law
+  Number: POL319
+  School: Grinnell College
+  Semester: Spring 2024
+  id: POL319
+
+- Course: Constitutional Law and Politics
+  Number: POL219
+  School: Grinnell College
+  Semester: Fall 2023
+  id: POL219
+
+- Course: Making Policy in Political Context
+  Number: GOVT2941
+  School: University of Sydney
+  Semester: Spring 2023
+  id: GOVT2941
+
+- Course: Big Data and Data Diversity (Advanced)
+  Number: DATA2901
+  School: University of Sydney
+  Semester: Spring 2023
+  id: DATA2901
+
+- Course: Automata, Formal Languages, and Computational Complexity
+  Number: CSC341
+  School: Grinnell College
+  Semester: Fall 2022
+  id: CSC341
+
+- Course: Analysis of Algorithms
+  Number: CSC301
+  School: Grinnell College
+  Semester: Fall 2023
+  id: CSC301
+
+- Course: Introduction to Data Science
+  Number: STA230
+  School: Grinnell College
+  Semester: Fall 2021
+  id: STA230
+
+- Course: Bayesian Statistics
+  Number: STA340
+  School: Grinnell College
+  Semester: Fall 2023
+  id: STA340
+
+- Course: Advanced Seminar on the U.S. Foreign Policymaking Process
+  Number: POL352
+  School: Grinnell College
+  Semester: Fall 2022
+  id: POL352
+
+- Course: Operating Systems and Parallel Algorithms
+  Number: CSC213
+  School: Grinnell College
+  Semester: Fall 2022
+  id: CSC213
+
+- Course: Object-Oriented Problem Solving, Data Structures, and Algorithms
+  Number: CSC207
+  School: Grinnell College
+  Semester: Spring 2022
+  id: CSC207
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
