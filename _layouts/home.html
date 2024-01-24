@@ -127,21 +127,21 @@ layout: default
                     </div>
                     {% endfor %}
               </div>
-            {% elsif section.name == "Coursework" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <p><i>{{section.description}}</i></p>
-                <div class="list-group">
-                {% for courses in site.data.courses %}
-                  <button type="button" class="list-group-item text-left">{{ courses.Course }}</button>
-                {% endfor %}
-                </div>
-              </div>
               {% elsif section.name == "Research Interests" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <p><i>{{section.description}}</i></p>
                 <div class="list-group">
                 {% for topic in site.data.researchinterest %}
                   <button type="button" class="list-group-item text-left">{{ topic.Topic }}</button>
+                {% endfor %}
+                </div>
+              </div>
+            {% elsif section.name == "Coursework" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+                <p><i>{{section.description}}</i></p>
+                <div class="list-group">
+                {% for courses in site.data.courses %}
+                  <button type="button" class="list-group-item text-left">{{ courses.Course }}</button>
                 {% endfor %}
                 </div>
               </div>
