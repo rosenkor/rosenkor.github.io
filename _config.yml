@@ -8,19 +8,19 @@
 # -----------BASE SETTINGS---------------#
 #========================================#
 
-title: Kory Website 
+title: Kory Rosen 
 email: 
 description: a minimalistic jekyll theme for academics
 baseurl:                                       # the subpath of your site, e.g. /blog
 url: "rosenkor.github.io"          # the base hostname & protocol for your site, e.g. http://example.com
-image: /assets/img/icons/1x/grinnell.png              # used to generate site link preview
+image: /assets/img/grinnell.png           # used to generate site link preview
 image_alt: A minimalistic jekyll theme for academic    # image description
 
 # =======================================#
 # -----------SITE SETTINGS---------------#
 #========================================#: 
 author: John Doe 
-profile_image: /assets/img/avatar/cropped.png #/assets/img/avatar/avatar.jpeg 
+profile_image: /assets/img/Kory.jpg #/assets/img/avatar/avatar.jpeg 
 occupation: 
 snippet:
 twitter: tbutler0x90
