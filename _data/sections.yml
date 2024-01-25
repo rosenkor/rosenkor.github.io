@@ -30,5 +30,11 @@
   content: 
   first: false
 
+- name: Writing Samples
+  id: writingsamples
+  description: Here is a list of relevant writing samples. 
+  content: 
+  first: false
+
 
 

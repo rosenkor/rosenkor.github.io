@@ -1,0 +1,53 @@
+- name: Commerce Clause Interpretation
+  id: sample1
+  description: >
+     The essay examines the evolution and interpretation of the Commerce Clause in the U.S. Constitution.
+     It focuses on key Supreme Court cases that have shaped the understanding of the Clause's reach in balancing state 
+     and federal powers. The essay discusses the aggregation principle, introduced in the 20th century, which 
+     allows Congress to regulate individual activities impacting interstate commerce when considered collectively.
+     It reviews landmark cases like Wickard v. Filburn, Heart of Atlanta Motel Inc. v. United States, and 
+     Katzenbach v. McClung, highlighting their roles in expanding the interpretation of the Commerce Clause. 
+     The essay also delves into contrasting views on the Clause's interpretation, particularly examining 
+     Chief Justice Rehnquist's standard in United States v. Lopez and subsequent cases like National Federation 
+     of Independent Business v. Sebelius, presenting different judicial perspectives 
+     on the balance between federal authority and state rights in contemporary society.
+  date: Fall 2023
+  link: /assets/img/grinnell.png
+  Skills Used: 
+    - Constitutional Law
+
+
+
+- name: Project 2
+  id: project2
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
+  date: true
+  link: https://example.com
+  tech: 
+    - c++
+
+- name: Project 3
+  id: project3
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
+  date: true
+  link: https://example.com
+  image:  http://placehold.it/100x100
+  tech: 
+    - Java
+    - Maven
+    - Jenkins
+
+- name: Project 4
+  id: project4
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 0
+  date: true
+  link: https://example.com
+  tech: 
+    - Sonarcube
+    - Java

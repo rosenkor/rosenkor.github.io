@@ -109,6 +109,18 @@ layout: default
                 </div>
                 {% endfor %}
             </div>
+          {% elsif section.name == "Writing Samples" %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+              <p><i>{{section.description}}</i></p>
+                {% for writing_sample in site.data.writing_samples %}
+                <div class="media mt-2">
+                  <div class="media-body">
+                    <h5 class="mt-0"><a href="{{ writing_sample.link }}" class="highlighted">{{ writing_sample.name }}</a></h5>
+                    {{ writing_sample.description }}
+                  </div>
+                </div>
+                {% endfor %}
+            </div>
           {% elsif section.name == "Teaching" %}
             <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
               <p><i>{{section.description}}</i></p>
