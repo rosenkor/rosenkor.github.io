@@ -1,47 +1,14 @@
-- name: Project 1
+- name: Major League Baseball Over the Years
   id: project1
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  date: true
-  link: https://example.com
-  image:  http://placehold.it/100x100
+    Developed an R Shiny application to analyze 150 years of Major League Baseball statistics. 
+    The project entailed processing extensive data from the 'Baseball Databank' and designing an interactive interface. 
+    Focused on league and team-level statistics, the app provided dynamic insights into the evolution of MLB, 
+    offering users the ability to explore and compare historical trends in hitting, pitching, and fielding. 
+    This tool represents a significant contribution to sports analytics by facilitating a deeper understanding 
+    of baseball's rich history.
+  date: Fall 2021
+  link: baseball.html
+  image: /assets/img/MLB.png
   tech: 
-    - python
-
-
-- name: Project 2
-  id: project2
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  date: true
-  link: https://example.com
-  image: http://placehold.it/100x100
-  tech: 
-    - c++
-
-- name: Project 3
-  id: project3
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  date: true
-  link: https://example.com
-  image:  http://placehold.it/100x100
-  tech: 
-    - Java
-    - Maven
-    - Jenkins
-
-- name: Project 4
-  id: project4
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 0
-  date: true
-  link: https://example.com
-  image: http://placehold.it/100x100
-  tech: 
-    - Sonarcube
-    - Java
+    - R Shiny

@@ -92,6 +92,7 @@ layout: default
             </div>
           {% elsif section.name == "Projects" %}
             <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+              <p><i>{{section.date}}</i></p>
               <p><i>{{section.description}}</i></p>
                 {% for projects in site.data.projects %}
                 <div class="media mt-2">
