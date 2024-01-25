@@ -15,4 +15,27 @@
   link: /assets/pdf/CommerceEssay.pdf
   Skills: 
     - Constitutional Law
+    - Commerce Clause
+    - United States v. Lopez
+    - Independent Business v. Sebelius
+    - Aggregation Principle
 
+- name: "Artificial Intelligence Ethics Unleashed: Navigating Australia's Regulatory Landscape"
+  id: sample1
+  description: >
+      The policy brief examines the urgent need for regulation in the AI field in Australia. 
+      It critically assesses Australia's current AI Ethics Principles using the multiple streams framework. 
+      The brief highlights risks associated with maintaining current policies due to AI's potential dangers 
+      and outlines economic, political, and budgetary implications of new AI regulations. 
+      Recommendations focus on enhancing fairness, privacy, transparency, and explainability of AI 
+      systems at various levels. The brief emphasizes the significance of ethical AI development in the face 
+      of emerging societal and technological challenges.
+  date: Spring 2023
+  link: /assets/pdf/policybrief.pdf
+  Skills: 
+    - Artificial Intelligence
+    - Ethics
+    - Australia
+    - Policy Brief
+    - Multiple Streams Framework
+    - Regulation
