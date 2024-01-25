@@ -129,15 +129,15 @@ layout: default
                 </div>
                 {% endfor %}
             </div>
-          {% elsif section.name == "Teaching" %}
+          {% elsif section.name == "Academic Experience" %}
             <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
               <p><i>{{section.description}}</i></p>
-                  {% for courses in site.data.teaching %}
+                  {% for courses in site.data.acaex %}
                   <div class="list-group">
                     <div class="list-group-item list-group-item-action">
                       <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">{{ courses.School }}</h5>
-                        <p>{{ courses.Program }}</p>
+                        <h5 class="mb-1">{{ courses.Role }}</h5>
+                        <p>{{ courses.Class }}</p>
                         <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
                       </div>
                       <p class="mb-1">{{ courses.description }}</p>

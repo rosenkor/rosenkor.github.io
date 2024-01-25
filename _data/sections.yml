@@ -10,11 +10,11 @@
   content: 
   first: false
 
-- name: Teaching
-  id: teaching
+- name: Academic Experience
+  id: acaex
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   content: 
-  url: teaching.html
+  url: acaex.html
   first: false
 
 - name: Projects
