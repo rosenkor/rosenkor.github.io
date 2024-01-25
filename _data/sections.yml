@@ -36,5 +36,11 @@
   content: 
   first: false
 
+- name: Research Experience
+  id: resex
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  content: 
+  url: resex.html
+  first: false
 
 

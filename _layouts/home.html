@@ -146,6 +146,23 @@ layout: default
                   </div>
                   {% endfor %}
             </div>
+            {% elsif section.name == "Research Experience" %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+              <p><i>{{section.description}}</i></p>
+                  {% for research in site.data.resex %}
+                  <div class="list-group">
+                    <div class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{ research.Role }}</h5>
+                        <p>{{ courses.Class }}</p>
+                        <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
+                      </div>
+                      <p class="mb-1">{{ courses.description }}</p>
+                      <small>{{ courses.Department }}</small>
+                    </div>
+                  </div>
+                  {% endfor %}
+            </div>
           {% elsif section.name == "Research Interests" %}
             <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
               <p><i>{{section.description}}</i></p>
