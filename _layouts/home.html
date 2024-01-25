@@ -112,11 +112,18 @@ layout: default
           {% elsif section.name == "Writing Samples" %}
             <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
               <p><i>{{section.description}}</i></p>
-                {% for writing_sample in site.data.writing_samples %}
+                {% for writing_sample in site.data.writingsamples %}
                 <div class="media mt-2">
                   <div class="media-body">
+                    {{ writing_sample.date }}
                     <h5 class="mt-0"><a href="{{ writing_sample.link }}" class="highlighted">{{ writing_sample.name }}</a></h5>
                     {{ writing_sample.description }}
+                    {% if writing_sample.Skills %}
+                      <h6><mark><u>Topics Involved</u></mark></h6>
+                      {% for topic in writing_sample.Skills %}
+                      <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ topic }}</span>
+                      {% endfor %}
+                    {% endif %}
                   </div>
                 </div>
                 {% endfor %}
