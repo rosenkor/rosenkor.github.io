@@ -46,19 +46,19 @@
     {% endif %}
     {% if site.personalemail %}
         <a href="mailto:{{ site.personalemail }}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.social-color}};">
             <i class="fas fa-envelope"></i></a>
         </span>
     {% endif %} 
     {% if site.academicemail %}
         <a href="mailto:{{ site.academicemail }}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.social-color}};">
             <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Email" class="svg-icon" />
         </span>
     {% endif %} 
     {% if site.phonenumber %}
         <a href="tel:{{site.phonenumber}}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.social-color }};">
             <i class="fas fa-phone"></i></a>
         </span>
     {% endif %}  
