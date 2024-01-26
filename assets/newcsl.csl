@@ -11,7 +11,7 @@
     <layout delimiter=", ">
       <text variable="title" font-weight="bold"/>
       <names variable="author">
-        <name and="text" delimiter=", " delimiter-precedes-last="always" initialize-with=""/>
+        <name name-as-sort-order="all" and="text" delimiter=", " delimiter-precedes-last="always"/>
       </names>
       <date variable="issued" prefix=" (" suffix=")">
         <date-part name="year"/>
@@ -25,7 +25,7 @@
     <layout delimiter=", ">
       <text variable="title" font-weight="bold"/>
       <names variable="author">
-        <name and="text" delimiter=", " delimiter-precedes-last="always" initialize-with=""/>
+        <name name-as-sort-order="all" and="text" delimiter=", " delimiter-precedes-last="always"/>
       </names>
       <date variable="issued" prefix=" (" suffix=")">
         <date-part name="year"/>
