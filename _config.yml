@@ -117,7 +117,7 @@ exclude:
 # -----JEKYLL SCHOLAR SETTINGS-----------#
 #========================================#
 scholar:
-  last_name: Dumbarton
+  last_name: Rosen
   csl: /assets/newcsl.csl
   locale: en
   source: /_bibliography/
