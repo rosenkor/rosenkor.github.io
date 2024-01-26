@@ -26,21 +26,21 @@ last-updated: 2020-10-30 5:55 PM
         <!-- Twitter -->
         <div class="contact-method" style="margin-bottom:10px;">
             <span style="color:{{theme.contact-social-color}};">
-                <i class="fab fa-twitter-square icon-16x16 fa-fw"> </i>
+                <i class="fab fa-twitter-square fa-fw"></i>
                 <span>Twitter: <a href="https://twitter.com/rosenkory">@rosenkory</a></span>
             </span>
         </div>
         <!-- GitHub -->
         <div class="contact-method" style="margin-bottom:10px;">
             <span style="color:{{theme.contact-social-color}};">
-                <i class="fab fa-github-square icon-16x16 fa-fw"></i>
+                <i class="fab fa-github-square fa-fw"></i>
                 <span>GitHub: <a href="https://github.com/rosenkor">@rosenkor</a></span>
             </span>
         </div>
         <!-- LinkedIn -->
         <div class="contact-method" style="margin-bottom:10px;">
             <span style="color:{{theme.contact-social-color}};">
-                <i class="fab fa-linkedin icon-16x16 fa-fw"></i>
+                <i class="fab fa-linkedin fa-fw"></i>
                 <span>LinkedIn: <a href="https://www.linkedin.com/in/kory-rosen-b858a31b3">Kory Rosen</a></span>
             </span>
         </div>
@@ -53,10 +53,10 @@ last-updated: 2020-10-30 5:55 PM
         </div>
         <!-- Academic Email -->
         <div class="contact-method" style="margin-bottom:10px;">
-            <span style="color:{{theme.contact-social-color}};">
+            <span class="icon-container" style="color:{{theme.contact-social-color}};">
                 <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Academic Email" class="svg-icon" id="academic-email-icon3">
-                <span>Academic Email: rosenkor [at] grinnell [dot] edu</span>
             </span>
+            <span>Academic Email: rosenkor [at] grinnell [dot] edu</span>
         </div>
         <!-- Phone Number -->
         <div class="contact-method">
@@ -83,10 +83,8 @@ last-updated: 2020-10-30 5:55 PM
                 var themeColor = getComputedStyle(svgImage.parentNode).color;
                 svgDom.querySelector('svg').querySelectorAll('[fill]').forEach(el => el.setAttribute('fill', themeColor));
 
-                // Set the size and vertical alignment of the SVG
+                // Set the vertical alignment of the SVG
                 var svgElement = svgDom.querySelector('svg');
-                svgElement.setAttribute('width', '16px');
-                svgElement.setAttribute('height', '16px');
                 svgElement.setAttribute('style', 'vertical-align: middle;');
 
                 // Replace the <img> with the new SVG
@@ -95,3 +93,19 @@ last-updated: 2020-10-30 5:55 PM
             .catch(error => console.error('Error loading SVG:', error));
     });
 </script>
+
+<style>
+    .icon-container {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.25em; /* Adjust to match FontAwesome icon width */
+        height: 1em; /* Adjust for proper vertical alignment */
+        vertical-align: middle;
+    }
+
+    .icon-container img {
+        width: 100%;
+        height: auto;
+    }
+</style>
