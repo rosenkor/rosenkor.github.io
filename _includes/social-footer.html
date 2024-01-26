@@ -52,7 +52,7 @@
     {% if site.academicemail %}
         <a href="mailto:{{ site.academicemail }}">
         <span style="color: {{ theme.social-color-footer }};">
-            <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Email" class="svg-icon" />
+            <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Email" class="svg-icon" id="academic-email-icon">
         </span>
     {% endif %} 
     {% if site.phonenumber %}
@@ -63,3 +63,25 @@
     {% endif %} 
     <i> &nbsp;&nbsp; </i>
 </span>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var svgImage = document.getElementById('academic-email-icon');
+        var svgUrl = svgImage.getAttribute('src');
+
+        fetch(svgUrl)
+            .then(response => response.text())
+            .then(svgData => {
+                var parser = new DOMParser();
+                var svgDom = parser.parseFromString(svgData, 'image/svg+xml');
+                
+                // Modify the color to match theme's social color
+                var themeColor = getComputedStyle(svgImage.parentNode).color;
+                svgDom.querySelector('svg').querySelectorAll('[fill]').forEach(el => el.setAttribute('fill', themeColor));
+
+                // Replace the <img> with the new SVG
+                svgImage.parentNode.replaceChild(svgDom.documentElement, svgImage);
+            })
+            .catch(error => console.error('Error loading SVG:', error));
+    });
+</script>
