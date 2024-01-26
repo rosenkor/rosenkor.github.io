@@ -25,45 +25,33 @@ last-updated: 2020-10-30 5:55 PM
     <div class="contact-methods" style="background:#f9f9f9; padding:20px; border-radius:10px;">
         <!-- Twitter -->
         <div class="contact-method" style="margin-bottom:10px;">
-            <span style="color:{{theme.contact-social-color}};">
-                <i class="fab fa-twitter-square"></i>
-                <span>Twitter: <a href="https://twitter.com/rosenkory">@rosenkory</a></span>
-            </span>
+            <i class="fab fa-twitter-square" style="color:{{theme.contact-social-color}};"></i>
+            <span>Twitter: <a href="https://twitter.com/rosenkory">@rosenkory</a></span>
         </div>
         <!-- GitHub -->
         <div class="contact-method" style="margin-bottom:10px;">
-            <span style="color:{{theme.contact-social-color}};">
-                <i class="fab fa-github-square"></i>
-                <span>GitHub: <a href="https://github.com/rosenkor">@rosenkor</a></span>
-            </span>
+            <i class="fab fa-github-square" style="color:{{theme.contact-social-color}};"></i>
+            <span>GitHub: <a href="https://github.com/rosenkor">@rosenkor</a></span>
         </div>
         <!-- LinkedIn -->
         <div class="contact-method" style="margin-bottom:10px;">
-            <span style="color:{{theme.contact-social-color}};">
-                <i class="fab fa-linkedin"></i>
-                <span>LinkedIn: <a href="https://www.linkedin.com/in/kory-rosen-b858a31b3">Kory Rosen</a></span>
-            </span>
+            <i class="fab fa-linkedin" style="color:{{theme.contact-social-color}};"></i>
+            <span>LinkedIn: <a href="https://www.linkedin.com/in/kory-rosen-b858a31b3">Kory Rosen</a></span>
         </div>
         <!-- Personal Email -->
         <div class="contact-method" style="margin-bottom:10px;">
-            <span style="color:{{theme.contact-social-color}};">
-                <i class="fas fa-envelope"></i>
-                <span>Personal Email: koryrosen1 [at] gmail [dot] com</a></span>
-            </span>
+            <i class="fas fa-envelope" style="color:{{theme.contact-social-color}};"></i>
+            <span>Personal Email: koryrosen1 [at] gmail [dot] com</span>
         </div>
         <!-- Academic Email -->
         <div class="contact-method" style="margin-bottom:10px;">
-            <span style="color:{{theme.contact-social-color}};">
-                <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Academic Email" class="svg-icon" id="academic-email-icon">
-                <span>Academic Email: rosenkor [at] grinnell [dot] edu</a></span>
-            </span>
+            <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Academic Email" class="svg-icon" id="academic-email-icon">
+            <span>Academic Email: rosenkor [at] grinnell [dot] edu</span>
         </div>
         <!-- Phone Number -->
         <div class="contact-method">
-            <span style="color:{{theme.contact-social-color}};">
-                <i class="fas fa-phone"></i>
-                <span>Phone: <a href="tel:+17322073275">+1 732-207-3275</a></span>
-            </span>
+            <i class="fas fa-phone" style="color:{{theme.contact-social-color}};"></i>
+            <span>Phone: <a href="tel:+17322073275">+1 732-207-3275</a></span>
         </div>
     </div>
 </div>
@@ -80,7 +68,7 @@ last-updated: 2020-10-30 5:55 PM
                 var svgDom = parser.parseFromString(svgData, 'image/svg+xml');
 
                 // Modify the color to match theme's social color
-                var themeColor = getComputedStyle(svgImage.parentNode).color;
+                var themeColor = getComputedStyle(svgImage).color;
                 svgDom.querySelector('svg').querySelectorAll('[fill]').forEach(el => el.setAttribute('fill', themeColor));
 
                 // Set the size and vertical alignment of the SVG
