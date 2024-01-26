@@ -74,13 +74,19 @@
             .then(svgData => {
                 var parser = new DOMParser();
                 var svgDom = parser.parseFromString(svgData, 'image/svg+xml');
-                
+
                 // Modify the color to match theme's social color
                 var themeColor = getComputedStyle(svgImage.parentNode).color;
                 svgDom.querySelector('svg').querySelectorAll('[fill]').forEach(el => el.setAttribute('fill', themeColor));
 
+                // Set the size and vertical alignment of the SVG
+                var svgElement = svgDom.querySelector('svg');
+                svgElement.setAttribute('width', '1.33em');
+                svgElement.setAttribute('height', '1.33em');
+                svgElement.setAttribute('style', 'vertical-align: middle;');
+
                 // Replace the <img> with the new SVG
-                svgImage.parentNode.replaceChild(svgDom.documentElement, svgImage);
+                svgImage.parentNode.replaceChild(svgElement, svgImage);
             })
             .catch(error => console.error('Error loading SVG:', error));
     });
