@@ -54,7 +54,7 @@
     {% if site.academicemail %}
         <a href="mailto:{{ site.academicemail }}">
         <span style="color: {{ theme.social-color-footer }};">
-            <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Email" class="svg-icon" id="academic-email-icon">
+            <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Email" class="svg-icon" id="academic-email-icon2">
         </span>
     {% endif %} 
     {% if site.phonenumber %}
@@ -68,7 +68,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        var svgImage = document.getElementById('academic-email-icon');
+        var svgImage = document.getElementById('academic-email-icon2');
         var svgUrl = svgImage.getAttribute('src');
 
         fetch(svgUrl)
