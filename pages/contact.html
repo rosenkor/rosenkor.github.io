@@ -6,51 +6,51 @@ header-img:
 last-updated: 2020-10-30 5:55 PM
 ---
 <div class="contact-page">
-
-  <!-- Profile Section -->
-  <div class="profile-section">
-      <h1>Kory Rosen</h1>
-      <p>Student at Grinnell College</p>
-  </div>
+  
+  <!-- Profile Section with semantic HTML5 elements -->
+  <header class="profile-section">
+    <h1>Kory Rosen</h1>
+    <p>Student at Grinnell College</p>
+  </header>
 
   <!-- Introduction or About Me Section -->
-  <div class="about-me">
-      <p>Welcome to my contact page! Feel free to reach out to me through any of the platforms below or send me an email for any inquiries or collaborations.</p>
-  </div>
+  <section class="about-me">
+    <p>Welcome to my contact page! Feel free to reach out to me through any of the platforms below or send me an email for any inquiries or collaborations.</p>
+  </section>
 
-  <!-- Social Media and Contact Icons with Text -->
-  <div class="contact-methods">
+  <!-- Contact Methods organized in a list for better semantic structure -->
+  <section class="contact-methods">
+    <ul>
       <!-- Twitter -->
-      <div class="contact-method">
-          <i class="fab fa-twitter-square"></i>
-          <p>Twitter: <a href="https://twitter.com/rosenkory">@rosenkory</a></p>
-      </div>
+      <li class="contact-method">
+        <i class="fab fa-twitter-square"></i>
+        <p>Twitter: <a href="https://twitter.com/rosenkory">@rosenkory</a></p>
+      </li>
       <!-- GitHub -->
-      <div class="contact-method">
-          <i class="fab fa-github-square"></i>
-          <p>GitHub: <a href="https://github.com/rosenkor">@rosenkor</a></p>
-      </div>
+      <li class="contact-method">
+        <i class="fab fa-github-square"></i>
+        <p>GitHub: <a href="https://github.com/rosenkor">@rosenkor</a></p>
+      </li>
       <!-- LinkedIn -->
-      <div class="contact-method">
-          <i class="fab fa-linkedin"></i>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/kory-rosen-b858a31b3">Kory Rosen</a></p>
-      </div>
+      <li class="contact-method">
+        <i class="fab fa-linkedin"></i>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kory-rosen-b858a31b3">Kory Rosen</a></p>
+      </li>
       <!-- Personal Email -->
-      <div class="contact-method">
-          <i class="fas fa-envelope"></i>
-          <p>Email: <a href="mailto:koryrosen1@gmail.com">koryrosen1@gmail.com</a></p>
-      </div>
+      <li class="contact-method">
+        <i class="fas fa-envelope"></i>
+        <p>Email: <a href="mailto:koryrosen1@gmail.com">koryrosen1@gmail.com</a></p>
+      </li>
       <!-- Academic Email -->
-      <div class="contact-method">
-          <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Academic Email" class="svg-icon">
-          <p>Academic Email: <a href="mailto:rosenkor@grinnell.edu">rosenkor@grinnell.edu</a></p>
-      </div>
+      <li class="contact-method">
+        <i class="fas fa-university"></i>
+        <p>Academic Email: <a href="mailto:rosenkor@grinnell.edu">rosenkor@grinnell.edu</a></p>
+      </li>
       <!-- Phone Number -->
-      <div class="contact-method">
-          <i class="fas fa-phone"></i>
-          <p>Phone: <a href="tel:+17322073275">+1 732-207-3275</a></p>
-      </div>
-      <!-- Add more methods as needed -->
-  </div>
+      <li class="contact-method">
+        <i class="fas fa-phone"></i>
+        <p>Phone: <a href="tel:+17322073275">+1 732-207-3275</a></p>
+      </li>
+    </ul>
+  </section>
 </div>
-
