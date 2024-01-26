@@ -707,10 +707,10 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
   transform-origin: center;
 }
 
-/* This will apply the style to all .card-text elements on screens larger than 768 pixels */
 @media (min-width: 768px) {
-  .card-text {
-    white-space: nowrap;
+  .card-text2 {
+    white-space: nowrap !important;
+    overflow-x: auto !important;  /* Ensures that this rule takes precedence over others */
   }
 }
 
