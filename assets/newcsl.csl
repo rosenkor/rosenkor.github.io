@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0">
-  <!-- ... other parts of the style ... -->
+  <info>
+    <title>Custom Citation Style</title>
+    <id>http://www.zotero.org/styles/custom</id>
+    <updated>2024-01-26T00:00:00+00:00</updated>
+  </info>
 
   <!-- Citation layout -->
   <citation>
     <layout delimiter=", ">
       <text variable="title" font-weight="bold"/>
-      <names variable="author" delimiter=", ">
-        <name form="long" delimiter-precedes-last="never" initialize-with="" name-as-sort-order="all"/>
+      <names variable="author">
+        <name and="text" delimiter=", " delimiter-precedes-last="always" initialize-with=""/>
       </names>
-      <date variable="issued">
+      <date variable="issued" prefix=" (" suffix=")">
         <date-part name="year"/>
       </date>
-      <text variable="note"/>
+      <text variable="note" prefix=" " suffix="."/>
     </layout>
   </citation>
 
@@ -20,13 +24,13 @@
   <bibliography>
     <layout delimiter=", ">
       <text variable="title" font-weight="bold"/>
-      <names variable="author" delimiter=", ">
-        <name form="long" delimiter-precedes-last="never" initialize-with="" name-as-sort-order="all"/>
+      <names variable="author">
+        <name and="text" delimiter=", " delimiter-precedes-last="always" initialize-with=""/>
       </names>
-      <date variable="issued">
+      <date variable="issued" prefix=" (" suffix=")">
         <date-part name="year"/>
       </date>
-      <text variable="note"/>
+      <text variable="note" prefix=" " suffix="."/>
     </layout>
   </bibliography>
 </style>
