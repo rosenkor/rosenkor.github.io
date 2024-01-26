@@ -118,7 +118,7 @@ exclude:
 #========================================#
 scholar:
   last_name: Rosen
-  csl: /assets/newcsl.csl
+  style: newcsl.csl
   locale: en
   source: /_bibliography/
   bibliography: papers.bib
