@@ -44,7 +44,7 @@ last-updated: 2020-10-30 5:55 PM
         </div>
         <!-- Academic Email -->
         <div class="contact-method" style="margin-bottom:10px;">
-            <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Academic Email" style="vertical-align:middle; width:1.33em; height:1.33em;">
+            <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Academic Email" id="academic-email-icon">
             <span>Academic Email: rosenkor [at] grinnell [dot] edu</a></span>
         </div>
         <!-- Phone Number -->
@@ -55,41 +55,32 @@ last-updated: 2020-10-30 5:55 PM
     </div>
   </div>
 
-  <script>
+
+  
+<script>
     document.addEventListener("DOMContentLoaded", function() {
         var svgImage = document.getElementById('academic-email-icon');
         var svgUrl = svgImage.getAttribute('src');
 
-        function loadSVG() {
-            fetch(svgUrl)
-                .then(response => response.text())
-                .then(svgData => {
-                    var parser = new DOMParser();
-                    var svgDom = parser.parseFromString(svgData, 'image/svg+xml');
+        fetch(svgUrl)
+            .then(response => response.text())
+            .then(svgData => {
+                var parser = new DOMParser();
+                var svgDom = parser.parseFromString(svgData, 'image/svg+xml');
 
-                    var themeColor = getComputedStyle(svgImage.parentNode).color;
-                    var svgElement = svgDom.querySelector('svg');
-                    svgElement.querySelectorAll('[fill]').forEach(el => el.setAttribute('fill', themeColor));
-                    svgElement.setAttribute('width', '1.33em');
-                    svgElement.setAttribute('height', '1.33em');
-                    svgElement.setAttribute('style', 'vertical-align: middle;');
+                // Modify the color to match theme's social color
+                var themeColor = getComputedStyle(svgImage.parentNode).color;
+                svgDom.querySelector('svg').querySelectorAll('[fill]').forEach(el => el.setAttribute('fill', themeColor));
 
-                    svgImage.parentNode.replaceChild(svgElement, svgImage);
-                })
-                .catch(error => console.error('Error loading SVG:', error));
-        }
+                // Set the size and vertical alignment of the SVG
+                var svgElement = svgDom.querySelector('svg');
+                svgElement.setAttribute('width', '1.33em');
+                svgElement.setAttribute('height', '1.33em');
+                svgElement.setAttribute('style', 'vertical-align: middle;');
 
-        function checkOtherIcons() {
-            var otherIcons = document.querySelectorAll('.other-icons');
-            var otherIconsLoaded = Array.from(otherIcons).every(icon => icon.complete);
-
-            if (otherIconsLoaded) {
-                loadSVG();
-            } else {
-                setTimeout(checkOtherIcons, 100);
-            }
-        }
-
-        checkOtherIcons();
+                // Replace the <img> with the new SVG
+                svgImage.parentNode.replaceChild(svgElement, svgImage);
+            })
+            .catch(error => console.error('Error loading SVG:', error));
     });
 </script>
