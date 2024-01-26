@@ -43,6 +43,12 @@
         <span style="color: {{ theme.social-color }};">
             <i class="fab fa-keybase"></i></a>
         </span>
-    {% endif %} 
+    {% endif %}
+    {% if site.phonenumber %}
+        <a href="tel:{site.phonenumber}">
+        <span style="color: {{ theme.social-color-footer }};">
+            <i class="fab fa-phone"></i></a>
+        </span>
+    {% endif %}  
     <i> &nbsp;&nbsp; </i>
 </span>
