@@ -2,15 +2,14 @@
   font-style: italic;
 } 
 
-.author {
-  a {
-    border-bottom: 1px dashed var(--global-theme-color);
-    &:hover {
-        border-bottom-style: solid;
-        text-decoration: none;
-    }
-  }
+.author a {
+  border-bottom: 1px dashed var(--global-theme-color);
+}
 
+.author a:hover {
+  border-bottom-style: solid;
+  text-decoration: none;
+}
 
 .dropdown-toggle::after {
   display: none;
