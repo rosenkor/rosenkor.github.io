@@ -118,7 +118,7 @@ exclude:
 #========================================#
 scholar:
   last_name: Dumbarton
-  style: /assets/newcsl.csl
+  csl: /assets/newcsl.csl
   locale: en
   source: /_bibliography/
   bibliography: papers.bib
