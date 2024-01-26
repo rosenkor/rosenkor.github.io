@@ -1,65 +1,65 @@
 {% assign theme = site.data.themes[site.ui_theme] %}
 <!-- Displays Social Media Icons based on _config.yml settings -->
-<span style="color:{{social-color-footer}};">
+<span style="color:{{footer-social-color}};">
     <i> &nbsp;&nbsp; </i>
     {{ if site.twitter }}
      {% if site.twitter %}
         <a class="social-link" href="https://twitter.com/{{ site.twitter }}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.footer-social-color }};">
             <i class="fab fa-twitter-square fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.github %}
         <a href="https://github.com/{{ site.github }}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.footer-social-color }};">
             <i class="fab fa-github-square fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.linkedin %}
         <a href="https://www.linkedin.com/in/{{ site.linkedin }}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.footer-social-color }};">
             <i class="fab fa-linkedin fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.codepen %}
         <a href="https://codepen.io/{{ site.codepen }}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.footer-social-color }};">
             <i class="fab fa-codepen fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.stackoverflow %}
         <a href="https://stackoverflow.com/users/story/{{ site.stackoverflow }}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.footer-social-color }};">
             <i class="fab fa-stack-overflow fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.medium %}
         <a href="https://{{ site.medium }}.medium.com/">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.footer-social-color }};">
             <i class="fab fa-medium fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.keybase %}
         <a href="https://keybase.io/{{ site.keybase }}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.footer-social-color }};">
             <i class="fab fa-keybase></i></a>
         </span>
     {% endif %} 
     {% if site.personalemail %}
         <a href="mailto:{{ site.personalemail }}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.footer-social-color }};">
             <i class="fas fa-envelope"></i></a>
         </span>
     {% endif %} 
     {% if site.academicemail %}
         <a href="mailto:{{ site.academicemail }}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.footer-social-color }};">
             <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Email" class="svg-icon" id="academic-email-icon2">
         </span>
     {% endif %} 
     {% if site.phonenumber %}
         <a href="tel:{{site.phonenumber}}">
-        <span style="color: {{ theme.social-color-footer }};">
+        <span style="color: {{ theme.footer-social-color }};">
             <i class="fas fa-phone"></i></a>
         </span>
     {% endif %} 

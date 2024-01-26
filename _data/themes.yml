@@ -48,6 +48,7 @@ dark:
     font-color: "Black"
     social-color: "#CCCCCC"
     footer-social-color: "#000000"
+    contact-social-color: "#000000"
     button-color: "#000000"
     home-highlight-background: "#10292e"
     home-highlight-header-text: "#149f98"
