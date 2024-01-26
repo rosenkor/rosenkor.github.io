@@ -54,3 +54,42 @@ last-updated: 2020-10-30 5:55 PM
         </div>
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var svgImage = document.getElementById('academic-email-icon');
+        var svgUrl = svgImage.getAttribute('src');
+
+        function loadSVG() {
+            fetch(svgUrl)
+                .then(response => response.text())
+                .then(svgData => {
+                    var parser = new DOMParser();
+                    var svgDom = parser.parseFromString(svgData, 'image/svg+xml');
+
+                    var themeColor = getComputedStyle(svgImage.parentNode).color;
+                    var svgElement = svgDom.querySelector('svg');
+                    svgElement.querySelectorAll('[fill]').forEach(el => el.setAttribute('fill', themeColor));
+                    svgElement.setAttribute('width', '1.33em');
+                    svgElement.setAttribute('height', '1.33em');
+                    svgElement.setAttribute('style', 'vertical-align: middle;');
+
+                    svgImage.parentNode.replaceChild(svgElement, svgImage);
+                })
+                .catch(error => console.error('Error loading SVG:', error));
+        }
+
+        function checkOtherIcons() {
+            var otherIcons = document.querySelectorAll('.other-icons');
+            var otherIconsLoaded = Array.from(otherIcons).every(icon => icon.complete);
+
+            if (otherIconsLoaded) {
+                loadSVG();
+            } else {
+                setTimeout(checkOtherIcons, 100);
+            }
+        }
+
+        checkOtherIcons();
+    });
+</script>

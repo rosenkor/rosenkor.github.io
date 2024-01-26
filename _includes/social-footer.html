@@ -4,49 +4,49 @@
      {% if site.twitter %}
         <a class="social-link" href="https://twitter.com/{{ site.twitter }}">
         <span style="color: {{ theme.social-color-footer }};">
-            <i class="fab fa-twitter-square fa-lg other-icons"></i></a>
+            <i class="fab fa-twitter-square fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.github %}
         <a href="https://github.com/{{ site.github }}">
         <span style="color: {{ theme.social-color-footer }};">
-            <i class="fab fa-github-square fa-lg other-icons"></i></a>
+            <i class="fab fa-github-square fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.linkedin %}
         <a href="https://www.linkedin.com/in/{{ site.linkedin }}">
         <span style="color: {{ theme.social-color-footer }};">
-            <i class="fab fa-linkedin fa-lg other-icons"></i></a>
+            <i class="fab fa-linkedin fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.codepen %}
         <a href="https://codepen.io/{{ site.codepen }}">
         <span style="color: {{ theme.social-color-footer }};">
-            <i class="fab fa-codepen fa-lg other-icons"></i></a>
+            <i class="fab fa-codepen fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.stackoverflow %}
         <a href="https://stackoverflow.com/users/story/{{ site.stackoverflow }}">
         <span style="color: {{ theme.social-color-footer }};">
-            <i class="fab fa-stack-overflow fa-lg other-icons"></i></a>
+            <i class="fab fa-stack-overflow fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.medium %}
         <a href="https://{{ site.medium }}.medium.com/">
         <span style="color: {{ theme.social-color-footer }};">
-            <i class="fab fa-medium fa-lg other-icons"></i></a>
+            <i class="fab fa-medium fa-lg"></i></a>
         </span>
     {% endif %}
     {% if site.keybase %}
         <a href="https://keybase.io/{{ site.keybase }}">
         <span style="color: {{ theme.social-color-footer }};">
-            <i class="fab fa-keybase other-icons"></i></a>
+            <i class="fab fa-keybase></i></a>
         </span>
     {% endif %} 
     {% if site.personalemail %}
         <a href="mailto:{{ site.personalemail }}">
         <span style="color: {{ theme.social-color-footer }};">
-            <i class="fas fa-envelope other-icons"></i></a>
+            <i class="fas fa-envelope"></i></a>
         </span>
     {% endif %} 
     {% if site.academicemail %}
@@ -58,7 +58,7 @@
     {% if site.phonenumber %}
         <a href="tel:{{site.phonenumber}}">
         <span style="color: {{ theme.social-color-footer }};">
-            <i class="fas fa-phone other-icons"></i></a>
+            <i class="fas fa-phone"></i></a>
         </span>
     {% endif %} 
     <i> &nbsp;&nbsp; </i>
@@ -69,36 +69,25 @@
         var svgImage = document.getElementById('academic-email-icon');
         var svgUrl = svgImage.getAttribute('src');
 
-        function loadSVG() {
-            fetch(svgUrl)
-                .then(response => response.text())
-                .then(svgData => {
-                    var parser = new DOMParser();
-                    var svgDom = parser.parseFromString(svgData, 'image/svg+xml');
+        fetch(svgUrl)
+            .then(response => response.text())
+            .then(svgData => {
+                var parser = new DOMParser();
+                var svgDom = parser.parseFromString(svgData, 'image/svg+xml');
 
-                    var themeColor = getComputedStyle(svgImage.parentNode).color;
-                    var svgElement = svgDom.querySelector('svg');
-                    svgElement.querySelectorAll('[fill]').forEach(el => el.setAttribute('fill', themeColor));
-                    svgElement.setAttribute('width', '1.33em');
-                    svgElement.setAttribute('height', '1.33em');
-                    svgElement.setAttribute('style', 'vertical-align: middle;');
+                // Modify the color to match theme's social color
+                var themeColor = getComputedStyle(svgImage.parentNode).color;
+                svgDom.querySelector('svg').querySelectorAll('[fill]').forEach(el => el.setAttribute('fill', themeColor));
 
-                    svgImage.parentNode.replaceChild(svgElement, svgImage);
-                })
-                .catch(error => console.error('Error loading SVG:', error));
-        }
+                // Set the size and vertical alignment of the SVG
+                var svgElement = svgDom.querySelector('svg');
+                svgElement.setAttribute('width', '1.33em');
+                svgElement.setAttribute('height', '1.33em');
+                svgElement.setAttribute('style', 'vertical-align: middle;');
 
-        function checkOtherIcons() {
-            var otherIcons = document.querySelectorAll('.other-icons');
-            var otherIconsLoaded = Array.from(otherIcons).every(icon => icon.complete);
-
-            if (otherIconsLoaded) {
-                loadSVG();
-            } else {
-                setTimeout(checkOtherIcons, 100);
-            }
-        }
-
-        checkOtherIcons();
+                // Replace the <img> with the new SVG
+                svgImage.parentNode.replaceChild(svgElement, svgImage);
+            })
+            .catch(error => console.error('Error loading SVG:', error));
     });
 </script>
