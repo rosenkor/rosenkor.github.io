@@ -118,7 +118,7 @@ exclude:
 #========================================#
 scholar:
   last_name: Dumbarton
-  style: apa
+  style: /assets/newbst.bst
   locale: en
   source: /_bibliography/
   bibliography: papers.bib
