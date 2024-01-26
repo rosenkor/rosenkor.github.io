@@ -6,45 +6,53 @@ header-img:
 last-updated: 2020-10-30 5:55 PM
 ---
 {% assign theme = site.data.themes[site.ui_theme] %}
-<div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
-  <div class="card-body">
-    <h1 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h1>
-    <p>{{ content | markdownify }} </p>
-    <!-- Target -->
-    {% if page.pgp %}
-    <input id="foo" style="width:50%;" class="text-muted" value="{{ site.pgp-key }}">
-    <!-- Trigger -->
-    <button class="btn" data-clipboard-target="#foo">
-        <i class="far fa-copy" alt="Copy PGP clipboard"></i>
-        <span style="font-size:14px;">Copy</span>
-    </button>
-    {% endif %}
+
+<div class="contact-page">
+
+  <!-- Profile Section -->
+  <div class="profile-section">
+      <img src="/assets/img/Kory.jpg" alt="Kory Rosen" class="profile-image">
+      <h1>Kory Rosen</h1>
+      <p>Student at Grinnell College</p>
   </div>
-</div>
 
-<div class="card shadow">
-  <div class="container">
-    <form name="contact" method="POST" data-netlify="true">
-      <div class="mb-3 mt-5">
-        <input type="name" placeholder="Your Name" name="name" class="form-control" id="inputForName"/>
-      </div>
-      <div class="mb-3">
-        <textarea type="message" placeholder="Your Message" name="message" class="form-control" id="inputforMessage"></textarea>
-      </div>
-      <div class="mb-3">
-        <input type="email" placeholder="Your Email" name="email" class="form-control" id="inputforEmail">
-      </div>
-      <button type="submit" class="btn mb-4" style="background-color:{{theme.default-button-color}};">Submit</button>
-    </form>
+  <!-- Introduction or About Me Section -->
+  <div class="about-me">
+      <p>Welcome to my contact page! Feel free to reach out to me through any of the platforms below or send me an email for any inquiries or collaborations.</p>
   </div>
-</div>
 
+  <!-- Social Media and Contact Icons with Text -->
+  <div class="contact-methods">
+      <!-- Twitter -->
+      <div class="contact-method">
+          <i class="fab fa-twitter-square"></i>
+          <p>Twitter: <a href="https://twitter.com/rosenkory">@rosenkory</a></p>
+      </div>
+      <!-- GitHub -->
+      <div class="contact-method">
+          <i class="fab fa-github-square"></i>
+          <p>GitHub: <a href="https://github.com/rosenkor">@rosenkor</a></p>
+      </div>
+      <!-- LinkedIn -->
+      <div class="contact-method">
+          <i class="fab fa-linkedin"></i>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/kory-rosen-b858a31b3">Kory Rosen</a></p>
+      </div>
+      <!-- Personal Email -->
+      <div class="contact-method">
+          <i class="fas fa-envelope"></i>
+          <p>Email: <a href="mailto:koryrosen1@gmail.com">koryrosen1@gmail.com</a></p>
+      </div>
+      <!-- Academic Email -->
+      <div class="contact-method">
+          <img src="{{ 'assets/img/acamail.svg' | relative_url }}" alt="Academic Email" class="svg-icon">
+          <p>Academic Email: <a href="mailto:rosenkor@grinnell.edu">rosenkor@grinnell.edu</a></p>
+      </div>
+      <!-- Phone Number -->
+      <div class="contact-method">
+          <i class="fas fa-phone"></i>
+          <p>Phone: <a href="tel:+17322073275">+1 732-207-3275</a></p>
+      </div>
+      <!-- Add more methods as needed -->
+  </div>
 
-
-
-<script>
-function startClippy(){
-    new ClipboardJS('.btn');
-}
-window.onload = startClippy;
-</script>
