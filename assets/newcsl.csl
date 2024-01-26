@@ -11,11 +11,10 @@
     <layout delimiter=", ">
       <text variable="title" font-weight="bold"/>
       <names variable="author">
-        <name name-as-sort-order="all" and="text" delimiter=", " delimiter-precedes-last="always"/>
+        <name and="symbol" delimiter=" "/>
+        <name name-as-sort-order="all" delimiter=", " delimiter-precedes-last="always"/>
       </names>
-      <date variable="issued" prefix=" (" suffix=")">
-        <date-part name="year"/>
-      </date>
+      <date variable="issued" prefix=" " suffix=""/>
       <text variable="note" prefix=" " suffix="."/>
     </layout>
   </citation>
@@ -25,12 +24,9 @@
     <layout delimiter=", ">
       <text variable="title" font-weight="bold"/>
       <names variable="author">
-        <name name-as-sort-order="all" and="text" delimiter=", " delimiter-precedes-last="always"/>
+        <name name-as-sort-order="all" delimiter=", " delimiter-precedes-last="always"/>
       </names>
-      <date variable="issued" prefix=" (" suffix=")">
-        <date-part name="year"/>
-      </date>
-      <text variable="note" prefix=" " suffix="."/>
+      <date variable="issued" prefix=" " suffix="."/>
     </layout>
   </bibliography>
 </style>
