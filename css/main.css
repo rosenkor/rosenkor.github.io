@@ -692,3 +692,14 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
   font-family: Proxima;
   margin: 5% 0 0 15%;
 }
+
+/* Other */
+.svg-icon {
+  fill: currentColor;
+  width: 1.33em;  /* Matching Font Awesome size */
+  height: 1.33em; /* Maintain aspect ratio */
+  vertical-align: middle; /* Aligns icon with text or other elements */
+}
+
+
+
