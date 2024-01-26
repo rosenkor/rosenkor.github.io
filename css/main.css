@@ -708,9 +708,9 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
-  .card-text2 {
-    white-space: nowrap !important;
-    overflow-x: auto !important;  /* Ensures that this rule takes precedence over others */
+  ol.bibliography li {
+    white-space: nowrap;
+    overflow-x: auto; /* Adds horizontal scrolling */
   }
 }
 
