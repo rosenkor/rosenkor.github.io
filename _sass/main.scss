@@ -2,13 +2,21 @@
   font-style: italic;
 } 
 
-.author a {
-  border-bottom: 1px dashed var(--global-theme-color);
+.author {
+  a {
+    border-bottom: 1px dashed var(--global-theme-color);
+    &:hover {
+        border-bottom-style: solid;
+        text-decoration: none;
+    }
+  }
 }
 
-.author a:hover {
-  border-bottom-style: solid;
-  text-decoration: none;
+// Only prevent wrapping for author names on screens wider than 768 pixels
+@media (min-width: 768px) {
+  .author {
+    white-space: nowrap;
+  }
 }
 
 .dropdown-toggle::after {
