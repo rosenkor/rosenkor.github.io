@@ -25,10 +25,22 @@ Away from academia, my enthusiasm for tennis significantly enriches my life. I r
 
 At home, my time is often brightened by the presence of my dog, Brûlée. Our interactions, whether it's a walk or simply relaxing together, provide a welcome change of pace from my academic pursuits. Brûlée adds a dimension of straightforward, uncomplicated joy to my life, reminding me of the value of balance and the simple pleasures of daily living.
 
-<div style="width: 200px; height: 200px; background: url('/assets/img/brulee.jpg'); background-size: cover; margin: 50px; transform: rotate(-45deg); overflow: hidden;">
-  <div style="content: ''; position: absolute; top: -100px; left: 50px; width: 200px; height: 200px; border-radius: 100px; background: red;"></div>
-  <div style="content: ''; position: absolute; top: -100px; left: 100px; width: 200px; height: 200px; border-radius: 100px; background: red;"></div>
-</div>
+
+<style>
+img.heart {
+  mask: 
+    radial-gradient(at 70% 31%,#000 29%,#0000 30%), 
+    radial-gradient(at 30% 31%,#000 29%,#0000 30%), 
+    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+</style>
+
+![Brûlée](/assets/img/brulee.jpg){: .heart}
 
 
 
