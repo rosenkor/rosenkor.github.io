@@ -1,12 +1,12 @@
 - name: Publications
   id: publications
-  description: In Progress
+  description: Here is a list of my publications.
   url: publications.html
   first: true
   
 - name: Coursework
   id: courses
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: Highlighted below are courses relevant to my interest in the intersection of Artificial Intelligence and Law, encompassing a range of disciplines from political science to computer science and statistics.
   content: 
   first: false
 
