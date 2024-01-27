@@ -241,4 +241,12 @@ $('.show').show()
       $(".toast").toast("show");
   });
   </script>
+
+  <!-- JavaScript to enable tab functionality -->
+<script>
+  $('#test-list a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+  </script>
   
