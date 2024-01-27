@@ -40,16 +40,20 @@
         {% endfor %}
       </div>
       <div class="periodical">
-      {% if entry.type == "article" %}
-        <em>{{entry.journal}}</em>
-      {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}</em>
-      {% endif %}
-      {% if entry.year %}
-        {{entry.year}}
-      {% endif %}
+        {% if entry.type == "article" %}
+          <em>{{entry.journal}}</em>
+        {% elsif entry.type == "inproceedings" %}
+          <em>In {{entry.booktitle}}</em>
+        {% endif %}
+        {% if entry.year %}
+          {{entry.year}}
+          {% if entry.note %}
+            <span class="citation-note">{{ entry.note }}</span>
+          {% endif %}
+        {% endif %}
       </div>
     {% endif %}
+
 
     <div class="links">
     {% if entry.abstract %}
