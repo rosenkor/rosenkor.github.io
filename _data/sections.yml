@@ -12,21 +12,21 @@
 
 - name: Academic Experience
   id: acaex
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description:
   content: 
   url: acaex.html
   first: false
 
 - name: Projects
   id: projects
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: Below, you'll find a collection of key projects that showcase my skills and interests. This section will be updated in the near future with a considerable amount of projects. 
   content: 
   url: projects.html
   first: false
 
 - name: Research Interests
   id: researchinterest
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: 
   content: 
   first: false
 
@@ -38,8 +38,7 @@
 
 - name: Research Experience
   id: resex
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  content: 
+  description: Below is a showcase of my extensive research experiences, where I have delved into diverse fields, contributing to groundbreaking advancements and acquiring a profound understanding of Artificial Intelligence.
   url: resex.html
   first: false
 
