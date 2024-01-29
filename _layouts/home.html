@@ -55,7 +55,7 @@ layout: default
 {% else %}
 <div class="card mx-auto mb-1 border-0"  style="max-width: 100%;">
 {% endif %}
-<div class="card-header" style="background-color:{{ theme.home-highlight-background }}; overflow-x: auto; white-space: nowrap;">
+<div class="card-header" style="background-color:{{ theme.home-highlight-background }}; overflow-x: auto; overflow-y: hidden; white-space: nowrap;">
     <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist" style="display: flex; flex-wrap: nowrap;">
       {% for section in site.data.sections %}
         <li class="nav-item" style="flex: 0 0 auto;">
