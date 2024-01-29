@@ -709,8 +709,7 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
 
 @media (min-width: 768px) {
   ol.bibliography li {
-    white-space: nowrap;
-    overflow-x: auto; /* Adds horizontal scrolling */
+    white-space: nowrap;/* Adds horizontal scrolling */
   }
 }
 
