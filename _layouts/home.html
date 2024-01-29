@@ -69,7 +69,7 @@ layout: default
       {% for section in site.data.sections %}
         {% if section.first %}
           {% if section.name == "Publications" %}
-            <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
+            <div class="tab-pane active" id="{{section.id}}" role="tabpanel">
               <p><i>{{section.description}}</i></p>
               <p class="card-text2">{% bibliography -f papers %}</p>
             </div>
