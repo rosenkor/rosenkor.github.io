@@ -97,10 +97,6 @@ sass:
   sass_dir: _sass
   style: compressed
 
-
-include:
-  - _posts
-
 exclude:
   - .sass-cache/
   - .jekyll-cache/
