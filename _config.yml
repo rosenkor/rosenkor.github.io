@@ -10,11 +10,11 @@
 
 title: Kory Rosen 
 email: 
-description: a minimalistic jekyll theme for academics
+description: Personal Website
 baseurl:                                       # the subpath of your site, e.g. /blog
 url: "rosenkor.github.io"          # the base hostname & protocol for your site, e.g. http://example.com
 image: /assets/img/Kory.jpg         # used to generate site link preview
-image_alt: A minimalistic jekyll theme for academic    # image description
+image_alt: Personal Website    # image description
 
 # =======================================#
 # -----------SITE SETTINGS---------------#
