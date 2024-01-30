@@ -112,7 +112,7 @@ layout: default
                   <div class="media-body">
                     <h5 class="mt-0"><a href="{{ writing_sample.link }}" class="highlighted">{{ writing_sample.name }}</a></h5>
                     <p>{{ writing_sample.date }}</p>
-                    {{ writing_sample.description }}
+                    <p>{{ writing_sample.description }}</p>
                     {% if writing_sample.Skills %}
                       <h6><mark><u>Topics Involved</u></mark></h6>
                       {% for topic in writing_sample.Skills %}
