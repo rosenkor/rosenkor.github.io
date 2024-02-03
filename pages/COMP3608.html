@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Subdirectory Contents</title>
+</head>
+<body>
+    <h1>Subdirectory Contents: COMP3608</h1>
+    <div id="content">Loading...</div>
+
+    <script>
+        // WARNING: For demonstration purposes only. Do not expose personal tokens.
+        const token = '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'; // This is insecure and hypothetical
+        const username = 'rosenkor';
+        const repo = 'CS-Portfolio';
+        const subdirectory = 'COMP3608'; // Specify the subdirectory
+
+        async function fetchRepoContents(path = '') {
+            const url = `https://api.github.com/repos/${username}/${repo}/contents/${subdirectory}/${path}`;
+
+            try {
+                const response = await fetch(url, {
+                    headers: new Headers({
+                        'Authorization': `Bearer ${token}` // Still insecure for client-side use
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`GitHub API responded with ${response.status}`);
+                }
+
+                return await response.json();
+            } catch (error) {
+                console.error('Fetching GitHub repo contents failed:', error);
+                document.getElementById('content').innerText = 'Failed to load subdirectory contents.';
+                return null; // Ensure the calling function handles this gracefully
+            }
+        }
+
+        function createContentElement(item) {
+            const element = document.createElement('div');
+            element.textContent = `${item.type}: ${item.name}`;
+            return element;
+        }
+
+        async function displayContents(path = '') {
+            const contents = await fetchRepoContents(path);
+            const container = document.getElementById('content');
+
+            if (!contents || contents.length === 0) {
+                container.innerText = 'No contents found in this subdirectory.';
+                return;
+            }
+
+            container.innerHTML = ''; // Clear loading message
+            contents.forEach(item => {
+                const contentElement = createContentElement(item);
+                container.appendChild(contentElement);
+
+                // If it's a directory, you could optionally fetch its contents too
+                // This example does not automatically fetch subdirectories to keep it simple
+            });
+        }
+
+        displayContents();
+    </script>
+</body>
+</html>
