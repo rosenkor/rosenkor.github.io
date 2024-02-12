@@ -8,7 +8,6 @@
 # -----------BASE SETTINGS---------------#
 #========================================#
 
-title: Kory Rosen 
 email: 
 description: Personal Website
 baseurl:                                       # the subpath of your site, e.g. /blog
