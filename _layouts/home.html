@@ -239,11 +239,6 @@ $('.show').show()
       $('#test-list a').on('click', function (e) {
           e.preventDefault();
           $(this).tab('show');
-            var tabName = $(this).text().trim();
-            gtag('event', 'click', {
-            'event_category': 'homebar',
-            'event_label': tabName
-          });
       });
   
       $('.collapse').collapse();
@@ -258,10 +253,5 @@ $('.show').show()
   $('#test-list a').on('click', function (e) {
     e.preventDefault()
     $(this).tab('show')
-    var tabName = $(this).text().trim();
-    gtag('event', 'click', {
-            'event_category': 'homebar',
-            'event_label': tabName
-          });
   })
   </script>
