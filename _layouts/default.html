@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% assign theme = site.data.themes[site.ui_theme] %}
 <html>
+  {% include analytics.html %}
   {% include head.html %}
   <body style="background-color:{{theme.background-color}};">
     {% include nav.html %}
