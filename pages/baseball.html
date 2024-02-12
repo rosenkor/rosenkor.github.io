@@ -19,6 +19,9 @@ last-updated: 2020-10-30 5:55 PM
 
     iframe.style.transform = 'scale(' + scale + ')';
   }
+        var originalTitle = document.title;
+        var prefix = "Baseball Project | "; // Change "New Prefix" to whatever you want to prepend
+        document.title = prefix + originalTitle;
 
   window.onresize = scaleIframe;
   window.onload = scaleIframe;
