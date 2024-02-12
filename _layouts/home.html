@@ -206,7 +206,10 @@ layout: default
     e.preventDefault()
     $(this).tab('show')
     var tabName = $(this).text().trim();
-    ga('send', 'event', 'navbar', 'click', tabName);
+    gtag('event', 'click', {
+            'event_category': 'homebar',
+            'event_label': tabName
+          });
     })
 </script> 
 
@@ -236,7 +239,10 @@ $('.show').show()
           e.preventDefault();
           $(this).tab('show');
             var tabName = $(this).text().trim();
-        ga('send', 'event', 'navbar', 'click', tabName);
+            gtag('event', 'click', {
+            'event_category': 'homebar',
+            'event_label': tabName
+          });
       });
   
       $('.collapse').collapse();
@@ -252,6 +258,9 @@ $('.show').show()
     e.preventDefault()
     $(this).tab('show')
     var tabName = $(this).text().trim();
-    ga('send', 'event', 'navbar', 'click', tabName);
+    gtag('event', 'click', {
+            'event_category': 'homebar',
+            'event_label': tabName
+          });
   })
   </script>
