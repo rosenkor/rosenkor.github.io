@@ -1,5 +1,23 @@
-- name: Major League Baseball Over the Years
+- name: Supreme Court Opinion Analysis
   id: project1
+  description: >
+    Created an interactive R Shiny app to explore and visualize 278 Supreme Court case opinions spanning from 2019 to 2024. 
+    Developed a robust data pipeline using Python to extract, transform, and load 842 rows of opinion data from 
+    multiple endpoints of the CourtListener API. Utilized cutting-edge NLP techniques, such as sentiment analysis, 
+    topic modeling, and word cloud generation, to identify primary themes and sentiments within the opinion texts. 
+    Streamlined data management using a PostgreSQL database, resulting in a 20% reduction in query latency and improved 
+    app performance. Designed engaging visualizations using ggplot2 and plotly to highlight patterns in opinion lengths, 
+    vote distributions, and author attributes.
+  date: Spring 2023
+  link: scotus.html
+  image: /assets/img/SCOTUS.jpg
+  tech: 
+    - R Shiny
+    - Python
+    - Reticulate (R Package)
+
+- name: Major League Baseball Over the Years
+  id: project2
   description: >
     Developed an R Shiny application to analyze 150 years of Major League Baseball statistics. 
     The project entailed processing extensive data from the 'Baseball Databank' and designing an interactive interface. 
