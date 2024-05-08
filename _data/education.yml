@@ -1,6 +1,16 @@
+- School: Tulane University
+  Degree:
+    Program: "Ph.D. in Computer Science"
+    StartDate: 8/19/2024
+    EndDate:
+    Icon: /assets/img/tulane.png
+    Advisors:
+      - Name: "Professors Aron Culotta"
+        Link: "https://www.cs.tulane.edu/~culotta/"
+
 - School: Grinnell College
-  Degree: 
-  Program: "Bachelor of Arts<br>Majors: Computer Science, Political Science<br>Concentration: Statistics"
-  StartDate: 8/31/2020
-  EndDate: 05/20/2024
-  Icon: /assets/img/grinnell.png   
+  Degree:
+    Program: "Bachelor of Arts<br>Majors: Computer Science, Political Science<br>Concentration: Statistics"
+    StartDate: 8/31/2020
+    EndDate: 05/20/2024
+    Icon: /assets/img/grinnell.png
