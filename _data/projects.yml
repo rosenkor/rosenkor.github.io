@@ -16,6 +16,28 @@
     - Python
     - Reticulate (R Package)
 
+- name: DSI Elected Official Rap Sheet
+  id: project3
+  description: >
+    In collaboration with our community partner, Democratic Systems Inc. (DSI), created an interactive web application 
+    using Vue.js and Flask to inform voters about the legislative actions of the Georgia delegation in the 117th United States 
+    Congress on issues related to food insecurity. Developed a backend API using Flask to serve data from a MySQL database to the frontend.
+    Utilized GeoJSON data to create an interactive map of the congressional districts within the State of Georgia, allowing users to click on 
+    districts to view information about the corresponding representatives. Implemented a dropdown menu component to enable users to easily select 
+    and view data for specific representatives. Designed an intuitive user interface to display representative biographies, committee assignments, 
+    contact information, and voting records on relevant legislation.
+  date: Spring 2023
+  link:
+  image: /assets/img/SCOTUS.jpg
+  tech: 
+    - Vue.js
+    - Node.js
+    - Vue Leaflet
+    - Flask
+    - MySql
+    - GeoJSON
+    - ArcGIS API for Python
+
 - name: Major League Baseball Over the Years
   id: project2
   description: >
