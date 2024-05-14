@@ -7,7 +7,8 @@
     topic modeling, and word cloud generation, to identify primary themes and sentiments within the opinion texts. 
     Streamlined data management using a PostgreSQL database, resulting in a 20% reduction in query latency and improved 
     app performance. Designed engaging visualizations using ggplot2 and plotly to highlight patterns in opinion lengths, 
-    vote distributions, and author attributes.
+    vote distributions, and author attributes. (For the visualization on the link, it cannot do much since I do not
+    have premium subscription and it stops automatically at 1GB [Some features are not available]). 
   date: Spring 2023
   link: scotus.html
   image: /assets/img/SCOTUS.jpg
@@ -37,6 +38,24 @@
     - MySql
     - GeoJSON
     - ArcGIS API for Python
+
+- name: Connect Four (MiniMax with Alpha-Beta Pruning) with Graphical User Interface
+  id: project4
+  description: >
+    Enhanced a Connect Four game with alpha-beta pruning and minimax algorithms, 
+    building upon a foundation from the University of Sydney course, COMP3608 . 
+    The original command-line interface was transformed into an intuitive graphical user interface (GUI) using modern web technologies. 
+    The updated application provides an engaging and visually appealing experience for players while showcasing the power of intelligent game-playing strategies. 
+    By implementing alpha-beta pruning, the efficiency of the minimax algorithm was significantly improved, enabling the AI opponent to make strategic moves in real-time. 
+    This project demonstrates a strong understanding of artificial intelligence concepts and the ability to apply them effectively in a practical context, ultimately 
+    delivering an enhanced user experience in the classic game of Connect Four.
+  date: Spring 2023 & Spring 2024
+  link: https://github.com/rosenkor/connectfourminimax
+  image: /assets/img/SCOTUS.jpg
+  tech: 
+    - Python
+    - Pickle (Python)
+    - NumPy
 
 - name: Major League Baseball Over the Years
   id: project2
