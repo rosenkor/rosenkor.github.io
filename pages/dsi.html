@@ -1,0 +1,33 @@
+---
+layout: page
+permalink: /dsi.html
+title: DSI Project | Kory Rosen
+description: This page contains the DSI project done.
+header-img:
+last-updated: 2023-05-14 10:30 AM
+---
+
+<div id="iframe-container" style="width: 100%; height: 100%; max-width: 800px; max-height: 600px; overflow: hidden;">
+  <video id="dsi-video" controls style="width: 100%; height: 100%;">
+    <source src="/assets/img/DSI.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<script>
+function scaleVideo() {
+  var container = document.getElementById('iframe-container');
+  var video = document.getElementById('dsi-video');
+  var scaleX = container.clientWidth / video.videoWidth;
+  var scaleY = container.clientHeight / video.videoHeight;
+  var scale = Math.min(scaleX, scaleY);
+  video.style.transform = 'scale(' + scale + ')';
+}
+
+var originalTitle = document.title;
+var prefix = "DSI Project | ";
+document.title = prefix + originalTitle;
+
+window.onresize = scaleVideo;
+window.onload = scaleVideo;
+</script>

@@ -28,8 +28,8 @@
     and view data for specific representatives. Designed an intuitive user interface to display representative biographies, committee assignments, 
     contact information, and voting records on relevant legislation.
   date: Spring 2023
-  link:
-  image: /assets/img/SCOTUS.jpg
+  link: dsi.html
+  image: /assets/img/DSI.jpg
   tech: 
     - Vue.js
     - Node.js
