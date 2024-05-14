@@ -51,7 +51,7 @@
     delivering an enhanced user experience in the classic game of Connect Four.
   date: Spring 2023 & Spring 2024
   link: https://github.com/rosenkor/connectfourminimax
-  image: /assets/img/SCOTUS.jpg
+  image: /assets/img/connectfour.jpg
   tech: 
     - Python
     - Pickle (Python)
