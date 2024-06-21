@@ -1,13 +1,13 @@
 ---
 layout: page
 permalink: /about.html
-title: About | Kory Rosen
+title: About Me
 description: Get to know what I'm up too
 header-img: 
 last-updated: 2020-10-30 5:55 PM
 ---
-<h1 class="mx-auto" style="font-family:Courgette;">{{ About Me }}</h1>
 
+<h1 class="mx-auto" style="font-family:Courgette;">{{ page.title }}</h1>
 ## Academic
 
 I am an undergraduate student pursuing a Bachelor of Arts at Grinnell College, majoring in Computer Science and Political Science with a concentration in Statistics. Under the guidance of my major advisors, Professor Peter-Michael Osera in Computer Science and Professor Gemma Sala in Political Science, my journey at Grinnell College is poised to culminate in May 2024. This path has been characterized not just by rigorous coursework but also by transformative research experiences, particularly in the intersection of technology and societal impact.
