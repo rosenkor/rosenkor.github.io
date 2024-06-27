@@ -1,3 +1,29 @@
+- name: Sentient Robots & The Equal Protection Argument 
+  id: sample3
+  description: >
+    This law review article examines the legal implications of granting personhood and equal protection rights 
+    to sentient artificial intelligence (AI) entities. It presents a hypothetical scenario set in 2100 California to explore 
+    the potential challenges of AI regulation. The article analyzes theories of legal personhood and their applicability to AI systems 
+    with human-like cognitive abilities. It evaluates the criteria for suspect classification under the Equal Protection Clause—including 
+    history of discrimination, political powerlessness, and immutable characteristics—and their relevance to sentient AI. The analysis also 
+    considers the potential application of rational basis review to laws regulating sentient AI, weighing governmental interests in public 
+    safety against the rights of AI entities. Drawing parallels with legal precedents involving non-human entities and discrimination, the 
+    article highlights the complexities of adapting existing legal frameworks to advanced AI systems. It concludes by proposing recommendations 
+    for policy development, emphasizing the need for a multidisciplinary approach and adaptive legal frameworks to address the unique challenges 
+    presented by increasingly sophisticated AI in society.
+  date: Spring 2024
+  link: /assets/pdf/SentientRobotsLawReview.pdf
+  Skills: 
+Skills:
+  - Constitutional Law
+  - Equal Protection Clause
+  - Suspect Classification Analysis
+  - Rational Basis Review
+  - Legal Personhood
+  - AI Ethics and Regulation
+
+
+
 - name: Commerce Clause Interpretation
   id: sample1
   description: >
