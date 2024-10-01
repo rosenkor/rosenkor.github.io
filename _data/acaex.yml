@@ -1,3 +1,15 @@
+- Role: Teaching Assistant
+  Class: "CMPS3160/6160: Introduction to Data Science"
+  id: CMPS3160/6160-Introduction-to-Data-Science
+  data-id: data-mentor1-tulane
+  heading-id: head-mentor1-tulane
+  StartDate: 08/2024
+  EndDate:
+  first: true   # one must be true to properly display
+  description: >
+    Insert a description
+
+
 - Role: Mentor
   Class: "STA230: Introduction to Data Science"
   id: STA230-Introduction-to-Data-Science
@@ -5,7 +17,7 @@
   heading-id: head-mentor1
   StartDate: 08/2023
   EndDate: 12/2023
-  first: true   # one must be true to properly display
+  first: false
   description: >
    As a mentor for STA-230, my role was to support and enhance the educational experience of 
    students enrolled in this data science program. The course, who was taught by Professor Ryan Miller, 
