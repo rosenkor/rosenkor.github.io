@@ -90,7 +90,7 @@
 - name: Major League Baseball Over the Years
   id: project2
   description: >
-    Developed an R Shiny application to analyze 150 years of Major League Baseball statistics. 
+    Developed an R Shiny application to analyze 150 years of Major League Baseball (MLB) statistics. 
     The project entailed processing extensive data from the 'Baseball Databank' and designing an interactive interface. 
     Focused on league and team-level statistics, the app provided dynamic insights into the evolution of MLB, 
     offering users the ability to explore and compare historical trends in hitting, pitching, and fielding. 
