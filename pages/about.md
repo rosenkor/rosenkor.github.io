@@ -29,7 +29,6 @@ Outside of academia, tennis is a big part of my life. I enjoy playing for fun an
 
 I'm also a cinephile and a proud AMC A-Lister, regularly watching new releases. Movies give me a look into different cultures, experiences, and ways of thinking.
 
-
 At home, my dog Brûlée adds simple joy to my day. Whether we're on a walk or just hanging out, she reminds me to appreciate balance and the small things that matter.
 
 
