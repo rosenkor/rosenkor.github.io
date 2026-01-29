@@ -1,39 +1,39 @@
 # Kory Rosen's Personal Website
 
-Welcome to the repository for my personal website, [Kory Rosen's GitHub.io page](https://rosenkor.github.io/). This site showcases my journey as a student at Grinnell College, my research experiences, and my passion at the intersection of AI, law, and political science. The website is built using the Dumbarton theme, a Jekyll theme developed by Tyler Butler, providing a clean and professional layout.
+Welcome to the repository for my personal website, [rosenkor.github.io](https://rosenkor.github.io/). This site showcases my work as a Ph.D. student in Computer Science at Tulane University, my research experiences, and my interests in AI, law, and society. The website is built using the Dumbarton theme, a Jekyll theme developed by Tyler Butler.
 
 ## Overview
 
-- **Education**: Pursuing a Bachelor of Arts in Computer Science and Political Science with a concentration in Statistics at Grinnell College.
-- **Research**: Experience in applying Large Language Models for sociopolitical analysis and exploring AI applications in high-energy physics.
-- **Interests**: Focused on the dynamic interplay between artificial intelligence and legal frameworks.
+- **Education**: Second-year Ph.D. student in Computer Science at Tulane University. B.A. in Computer Science and Political Science with a Statistics concentration from Grinnell College.
+- **Research**: Applying machine learning to legal systems, with prior experience using Large Language Models for sociopolitical analysis and AI applications in high-energy physics.
+- **Interests**: Machine learning, natural language processing, AI ethics, fairness in AI, explainable AI, causal inference, and the intersection of AI and law.
 
 ## Website Structure
 
-- **Index Page**: Introduction and overview of my academic and professional journey.
-- **About Page**: More detailed information about my background and interests.
-- **Vitae Page**: A comprehensive list of my academic achievements, publications, and coursework.
-- **Contact Page**: Ways to get in touch with me, including links to my social media profiles.
+- **Index Page**: Introduction and overview of my academic and research work.
+- **About Page**: Background information and personal interests.
+- **Vitae Page**: Academic achievements, publications, and coursework.
+- **Contact Page**: Contact information and social media links.
 
 ## Repository Contents
 
-- `index.html`: The main landing page of the website.
-- `about.html`: Detailed background information.
-- `vitae.pdf`: My full academic vitae.
-- `contact.html`: Contact information and links.
+- `index.html`: Main landing page.
+- `about.html`: Detailed background.
+- `vitae.pdf`: Full academic vitae.
+- `contact.html`: Contact information.
 
 ## Acknowledgements
 
-- **Theme**: The website uses the Dumbarton theme by Tyler Butler. [View Theme](https://github.com/tcbutler320/Jekyll-Theme-Dumbarton).
+- **Theme**: This website uses the Dumbarton theme by Tyler Butler. [View Theme](https://github.com/tcbutler320/Jekyll-Theme-Dumbarton).
 
 ## Contributions
 
-Feel free to suggest edits or improvements by creating a pull request or opening an issue. I appreciate your input!
+Feel free to suggest edits or improvements by creating a pull request or opening an issue.
 
 ## Contact
 
-For more information, visit [my website](https://rosenkor.github.io/contact.html), or reach out to me through [LinkedIn](https://www.linkedin.com/in/rosenkor/), [Twitter](https://twitter.com/rosenkor), or [GitHub](https://github.com/rosenkor).
+For more information, visit [my website](https://rosenkor.github.io/contact.html), or reach out through [LinkedIn](https://www.linkedin.com/in/rosenkor/), [Twitter](https://twitter.com/rosenkor), or [GitHub](https://github.com/rosenkor).
 
 ---
 
-© 2024 Kory Rosen. Website built with Jekyll using the Dumbarton theme.
+© 2026 Kory Rosen. Website built with Jekyll using the Dumbarton theme.
