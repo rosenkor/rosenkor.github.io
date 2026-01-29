@@ -188,16 +188,31 @@ title: Kory Rosen
           {% elsif section.name == "Leadership" %}
             <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
               <p><i>{{section.description}}</i></p>
+
               {% for leadership in site.data.leadership %}
-              <div class="list-group">
-                <div class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{{ leadership.Organization }}</h5>
-                    <p>{{ leadership.Role }}</p>
-                    <small>{{ leadership.StartDate }} - {{ leadership.EndDate }}</small>
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action">
+
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1" id="{{ leadership.heading-id }}">{{ leadership.Organization }}</h5>
+                      <p>{{ leadership.Role }}</p>
+                      <small>
+                        {{ leadership.StartDate }} -
+                        {% if leadership.EndDate and leadership.EndDate != "" %}
+                          {{ leadership.EndDate }}
+                        {% else %}
+                          Present
+                        {% endif %}
+                      </small>
+                    </div>
+
+                    <p class="mb-1">{{ leadership.description }}</p>
+
                   </div>
-                  <p class="mb-1">{{ leadership.description }}</p>
+                </div>
+              {% endfor %}
             </div>
+
 
           {% else %}
             <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
