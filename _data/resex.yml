@@ -1,3 +1,22 @@
+- University: Tulane University
+  Role: Research Assistant
+  id: tulane
+  data-id: data-research3
+  heading-id: head-research3
+  StartDate: 08/2024
+  EndDate:
+  first: true
+  description: >
+    Since August 2024, I have served as a Research Assistant at Tulane University under the guidance of Dr. Aron Culotta, 
+    working on research focused on applying machine learning methods to the legal domain. My work centers on developing 
+    deep learning models to analyze administrative datasets and predict procedural outcomes. As this research is currently 
+    unpublished, I must remain somewhat general in describing the specific methods and applications. I built the entire 
+    pipeline from the ground up, including data preprocessing, feature engineering, model development, and evaluation 
+    infrastructure. This project has deepened my expertise in neural network architectures, model interpretability, and 
+    the responsible application of machine learning to sensitive contexts, while reinforcing my commitment to careful 
+    consideration of the ethical implications inherent in deploying AI systems within high-stakes domains.
+    
+
 - University: University of North Texas
   Role: Undergraduate Research Assistant
   id: compsci
@@ -8,15 +27,18 @@
   first: false
   description: >
     During my time as a Research Assistant at the University of North Texas, 
-    I have been immersed in a deep learning project under the guidance of Professor Ting Xiao and 
+    I immersed myself in a deep learning project under the guidance of Professor Ting Xiao and 
     Dr. Daniel Lersch. My involvement originated from the Research Experience for Undergraduates (REU) program, 
     focusing on the application of variational autoencoders for particle identification within the realm of high-energy 
-    physics. My role has been integral to the project, as I have been responsible for engineering custom hyperparameter
-    tuners, thereby aiding in both the development and refinement of sophisticated predictive models. 
-    This has involved a continuous process of enhancing the model architecture, significantly contributing 
-    to its computational efficiency and predictive accuracy. My work has culminated in presenting a poster at 
-    the REU symposium and is now progressing towards the drafting of a research paper for publication, 
-    demonstrating the practical implications of our findings in the field of high-energy physics.
+    physics. As part of the research team, I contributed to the collaborative design and implementation of the models.
+    My individual contributions included building an automated hyperparameter tuning pipeline that reduced model selection 
+    time from days to hours, developing an analytics system for learning-curve analysis, anomaly detection, and latent-space 
+    evaluation with real-time monitoring, and implementing custom optimization routines to automate model assessment and 
+    selection. I presented this work as a poster at the REU symposium, where we reported empirical results and 
+    discussed methodological limitations and future directions. Beyond the REU, there was an opportunity to extend this research
+    into a longer-term project. Over the subsequent time, I continued to refine and expand upon our initial findings,
+    that lead to significant progress in model performance.  
+    
 
 - University: Purdue University
   Role: Political Science Undergraduate Research Assistant
@@ -25,7 +47,7 @@
   heading-id: head-research1
   StartDate: 06/2023
   EndDate: 01/2024
-  first: true   # one must be true to properly display
+  first: false   # one must be true to properly display
   description: >
     In the summer of 2023, as a Research Assistant at Purdue University under Professors Daniel Schiff 
     and Kaylyn Jackson Schiff, I embarked on an exploratory project to harness the potential of Large 

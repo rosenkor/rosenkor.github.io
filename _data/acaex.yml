@@ -3,11 +3,24 @@
   id: CMPS6620-Artificial-Intelligence
   data-id: data-tutor1-tulane
   heading-id: head-tutor1-Tulane
-  StartDate: 09/2025
+  StartDate: 08/2025
   EndDate: 12/2025
   first: true    # one must be true to properly display
   description: >
-    Insert a description
+    As a tutor for CMPS 6620: Artificial Intelligence, a graduate-level course taught 
+    by Professor Aron Culotta, my role was to support M.S. and Ph.D. students as they 
+    developed both theoretical and practical foundations in AI. The course focused on the 
+    design and analysis of autonomous intelligent agents, combining formal algorithmic 
+    reasoning with implementation-driven assignments. I held weekly online office hours 
+    where I worked one-on-one with students to clarify core concepts such as uninformed 
+    and heuristic search, adversarial search, Bayesian networks, decision networks, Markov 
+    Decision Processes, and reinforcement learning. Much of my support centered on helping 
+    students reason through algorithm design choices, analyze correctness and complexity, 
+    and translate mathematical formulations into working implementations for programming 
+    assignments. I also provided targeted guidance on long-form assignments and exam preparation, 
+    helping students connect lecture material, textbook readings, and their own code. This role 
+    required communicating complex ideas clearly to a diverse group of graduate students and 
+    reinforcing rigorous problem-solving habits expected in an advanced AI curriculum. 
 
 - Role: Teaching Assistant
   Class: "CMPS1600: Introduction to Computer Science II"
@@ -18,7 +31,21 @@
   EndDate: 05/2025
   first: false   # one must be true to properly display
   description: >
-    Insert a description
+    As a teaching assistant for CMPS 1600: Introduction to Computer Science II, the second course 
+    in Tulane’s introductory computer science sequence taught by Professor Alireza Shirvani, I 
+    supported undergraduate students as they learned structured software design and data-structure–based 
+    thinking. I led weekly recitation sessions for two sections totaling approximately 60 students, 
+    where recitations were run as hands-on lab periods focused on weekly programming assignments. 
+    During these sessions, I helped students debug code, review implementations, reason about memory 
+    management and pointers, and analyze time complexity while reinforcing core object-oriented concepts 
+    such as inheritance, abstraction, and interfaces. I also held weekly office hours providing 
+    individualized support on assignments, exams, and the semester-long class project, where students 
+    built simple games using Professor Shirvani’s Camelot virtual environment. The project was 
+    structured around graphs, with nodes representing story states and edges representing player choices, 
+    and I assisted students with implementing this structure in Java, integrating it with the Camelot API, 
+    and testing their projects end to end. In addition to instructional support, I proctored the midterm 
+    exam. I also developed supplementary practice problems and review materials to reinforce lecture 
+    content and common implementation issues. 
 
 - Role: Teaching Assistant
   Class: "CMPS3160/6160: Introduction to Data Science"
@@ -26,11 +53,22 @@
   data-id: data-ta1-tulane
   heading-id: head-ta1-tulane
   StartDate: 08/2024
-  EndDate:
+  EndDate: 12/2024
   first: false   # one must be true to properly display
   description: >
-    Insert a description
-
+    As a teaching assistant for CMPS 3160/6160: Introduction to Data Science, an undergraduate and graduate 
+    cross-listed course taught by Professor Rebecca Faust, I supported students as they developed practical 
+    skills in data analysis, statistics, and data-driven problem solving using Python. I led weekly lab 
+    sessions for approximately 40 students, where labs were structured as hands-on, applied work with real 
+    datasets using tools such as NumPy, pandas, and visualization libraries. During these sessions, I 
+    provided real-time debugging support, helped students reason through statistical concepts, and guided 
+    them in translating analytical goals into working code. I also held weekly office hours offering 
+    individualized assistance on labs, exams, and the multi-stage course project, and I organized and led 
+    a final exam review session to help students consolidate key concepts and prepare for cumulative 
+    assessment. In addition to instructional support, I developed detailed grading rubrics in Gradescope 
+    and individually reviewed each student’s submission, carefully evaluating code and written responses 
+    manually due to the limited automation available in the grading platform. I also helped create a 
+    practice midterm exam to allow students to assess their readiness and identify gaps in understanding. 
 
 - Role: Mentor
   Class: "STA230: Introduction to Data Science"

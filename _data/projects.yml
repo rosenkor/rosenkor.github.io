@@ -1,3 +1,33 @@
+- name: Adversarial Training in Federated RL Recommendation Systems
+  id: adversarial-federated-rl
+  description: >
+    Extended the FedSlate framework to investigate adversarial vulnerabilities in privacy-preserving recommendation 
+    systems by integrating FGSM-based adversarial training into a federated reinforcement learning architecture. 
+    Modernized the RecSim environment's deprecated TensorFlow estimator framework to ensure compatibility with 
+    current TensorFlow versions, enabling integration with PyTorch-based adversarial components. Adapted Fast 
+    Gradient Sign Method (FGSM) from supervised learning to the federated RL context by reformulating the 
+    attack objective as L_attack = -Q(s,a), generating adversarial states through gradient-based perturbations 
+    (ε=0.01) to minimize Q-values and disrupt agent decision-making. Implemented a delayed adversarial training 
+    pipeline that begins perturbations after 200 episodes of clean training, allowing agents to establish 
+    baseline policies before exposure to adversarial conditions across 5000 total training episodes. Designed 
+    comprehensive evaluation framework tracking rewards, Q-values, loss metrics, and epsilon decay patterns, 
+    revealing that adversarial training improved robustness (Agent Alpha maintained Q-values ~14 under both 
+    clean and adversarial states) but caused 50% reward degradation compared to baseline. Configured dual-agent 
+    architecture with asymmetric state representations and federated Q-value sharing mechanism, enabling 
+    collaborative learning without centralized data collection while demonstrating cascading effects of 
+    adversarial attacks across federated agents.
+  date: Fall 2024
+  link: https://github.com/rosenkor/CMPS6740Project
+  image: /assets/img/SCOTUS.jpg
+  tech:
+    - Python
+    - TensorFlow
+    - PyTorch
+    - RecSim (Modernized)
+    - FedSlate Framework (Extended)
+    - FGSM (Adapted)
+    - Deep Q-Networks
+
 - name: Supreme Court Opinion Analysis
   id: project1
   description: >
