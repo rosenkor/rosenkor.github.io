@@ -18,7 +18,7 @@
     adversarial attacks across federated agents.
   date: Fall 2024
   link: https://github.com/rosenkor/CMPS6740Project
-  image: /assets/img/SCOTUS.jpg
+  image: /assets/img/rl.jpg
   tech:
     - Python
     - TensorFlow
