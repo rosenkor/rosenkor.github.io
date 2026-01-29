@@ -3,10 +3,16 @@
   description: Here is a list of my publications.
   url: publications.html
   first: true
-  
-- name: Coursework
-  id: courses
-  description: Highlighted below are courses relevant to my interest in the intersection of Artificial Intelligence and Law, encompassing a range of disciplines from political science to computer science and statistics.
+
+- name: Research Experience
+  id: resex
+  description: Below is a showcase of my extensive research experiences, where I have delved into diverse fields, contributing to groundbreaking advancements and acquiring a profound understanding of Artificial Intelligence.
+  url: resex.html
+  first: false
+
+- name: Research Interests
+  id: researchinterest
+  description: 
   content: 
   first: false
 
@@ -17,6 +23,12 @@
   url: acaex.html
   first: false
 
+- name: Leadership
+  id: leadership
+  description: Below is a summary of my leadership roles and contributions within various organizations.
+  url: leadership.html
+  first: false
+
 - name: Projects
   id: projects
   description: Below, you'll find a collection of key projects that showcase my skills and interests. This section will be updated in the near future with a considerable amount of projects. 
@@ -24,9 +36,9 @@
   url: projects.html
   first: false
 
-- name: Research Interests
-  id: researchinterest
-  description: 
+- name: Coursework
+  id: courses
+  description: Highlighted below are courses relevant to my interest in the intersection of Artificial Intelligence and Law, encompassing a range of disciplines from political science to computer science and statistics.
   content: 
   first: false
 
@@ -34,12 +46,6 @@
   id: writingsamples
   description: Here is a list of relevant writing samples. 
   content: 
-  first: false
-
-- name: Research Experience
-  id: resex
-  description: Below is a showcase of my extensive research experiences, where I have delved into diverse fields, contributing to groundbreaking advancements and acquiring a profound understanding of Artificial Intelligence.
-  url: resex.html
   first: false
 
 

@@ -1,0 +1,74 @@
+- Organization: Computer Science Graduate Student Association (CSGSA)
+  Role: President
+  id: csgsa-president
+  data-id: data-csgsa-president
+  heading-id: head-csgsa-president
+  StartDate: 05/2025
+  EndDate:
+  first: true    # one must be true to properly display
+  description: >
+    As President of the Computer Science Graduate Student Association at Tulane University, 
+    I lead the elected graduate student governance body representing all of the CS graduate 
+    students (Master's and PhD) within the Department of Computer Science. I oversee the 
+    planning and execution of professional development events, research seminars, and 
+    social activities designed to foster community and enhance the graduate student experience, 
+    and act as the primary point of contact between CS graduate students and departmental leadership. 
+    In this role, I work directly with faculty and administrators on issues related to graduate 
+    student welfare, funding priorities, and access to departmental resources.
+
+- Organization: Graduate Studies Student Association (GSSA)
+  Role: Representative for the Computer Science Department; Legislative Committee Member
+  id: gssa-rep
+  data-id: data-gssa-rep
+  heading-id: head-gssa-rep
+  StartDate: 05/2025
+  EndDate:
+  first: false   # one must be true to properly display
+  description: >
+    As a Computer Science Department representative to Tulane University’s Graduate Studies Student 
+    Association, I advocate for the interests of Computer Science graduate students within the university’s 
+    officially recognized governing body for master’s and doctoral students in the Schools of Liberal Arts 
+    and Science and Engineering. In this role, I collaborate with representatives from other departments 
+    to review and vote on funding requests and policy proposals, helping allocate student activity funding 
+    for academic, career, and social initiatives that shape graduate student programming and resource 
+    distribution. Additionally, I serve on GSSA’s Legislative Committee, helping shape policy language 
+    and decisions that influence funding processes and support structures for graduate students across the schools.
+
+
+
+- Organization: Graduate and Professional Student Association (GAPSA)
+  Role: Senator for the Graduate Studies Student Association (GSSA)
+  id: gapsa-senator
+  data-id: data-gapsa-senator
+  heading-id: head-gapsa-senator
+  StartDate: 08/2025
+  EndDate:
+  first: false   # one must be true to properly display
+  description: >
+    As a Senator in Tulane University's Graduate and Professional Student Association, I represent the GSSA division 
+    within the university-wide governing body for all graduate and professional students. GAPSA is the unifying 
+    student government for all graduate and professional divisions, charged with advocating student interests to 
+    university administration, promoting cross-division communication, and coordinating programming that supports 
+    academic and professional growth across disciplines. In this role, I review funding proposals, participate in 
+    deliberations on policy matters that affect graduate students broadly, and vote on measures related to funding 
+    and student support. I work across divisions to ensure that shared concerns — such as interdisciplinary 
+    programming, equitable funding distribution, and resource access — are considered in GAPSA governance.
+  
+- Organization: Grinnell College Machine Learning & AI Club
+  Role: Co-Founder; Alumni Advisor
+  id: mlai-club
+  data-id: data-mlai-club
+  heading-id: head-mlai-club
+  StartDate: 02/2024
+  EndDate:
+  first: false   # one must be true to properly display
+  description: >
+    As a Co-Founder of the Machine Learning & AI Club at Grinnell College, I helped establish a student organization 
+    dedicated to building technical skills in machine learning and applied artificial intelligence. I organized and 
+    led hands-on workshops that taught students to build and evaluate models in areas like neural networks, natural 
+    language processing, and computer vision. I also coordinated speaker events with industry professionals to connect 
+    students with current practitioners and career pathways. As an alumni advisor, I continue to support club leadership 
+    by advising on curriculum planning, technical direction, and maintaining industry relationships that help the club 
+    offer relevant, practical experiences for members.
+
+
