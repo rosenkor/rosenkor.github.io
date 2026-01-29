@@ -1,11 +1,33 @@
+- Role: Tutor
+  Class: "CMPS6620: Artificial Intelligence"
+  id: CMPS6620-Artificial-Intelligence
+  data-id: data-tutor1-tulane
+  heading-id: head-tutor1-Tulane
+  StartDate: 09/2025
+  EndDate: 12/2025
+  first: true    # one must be true to properly display
+  description: >
+    Insert a description
+
+- Role: Teaching Assistant
+  Class: "CMPS1600: Introduction to Computer Science II"
+  id: CMPS1600-Introduction-to-Computer-Science-II
+  data-id: data-ta2-tulane
+  heading-id: head-ta2-tulane
+  StartDate: 01/2025
+  EndDate: 05/2025
+  first: false   # one must be true to properly display
+  description: >
+    Insert a description
+
 - Role: Teaching Assistant
   Class: "CMPS3160/6160: Introduction to Data Science"
   id: CMPS3160/6160-Introduction-to-Data-Science
-  data-id: data-mentor1-tulane
-  heading-id: head-mentor1-tulane
+  data-id: data-ta1-tulane
+  heading-id: head-ta1-tulane
   StartDate: 08/2024
   EndDate:
-  first: true   # one must be true to properly display
+  first: false   # one must be true to properly display
   description: >
     Insert a description
 

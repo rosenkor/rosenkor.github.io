@@ -1,3 +1,21 @@
+- Course: Quantum Computing
+  Number: CMPS6660
+  School: Tulane Universtiy
+  Semester: Fall 2025
+  id: CMPS6660
+
+- Course: Natural Language Processing
+  Number: CMPS6730
+  School: Tulane Universtiy
+  Semester: Spring 2025
+  id: CMPS6730
+
+- Course: Machine Learning
+  Number: CMPS6720
+  School: Tulane Universtiy
+  Semester: Spring 2025
+  id: CMPS6720
+
 - Course: Reinforcement Learning
   Number: CMPS6740
   School: Tulane Universtiy
