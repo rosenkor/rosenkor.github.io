@@ -1,10 +1,9 @@
 - name: Adversarial Training in Federated RL Recommendation Systems
   id: adversarial-federated-rl
   description: >
-    Extended the FedSlate framework to investigate adversarial vulnerabilities in privacy-preserving recommendation 
-    systems by integrating FGSM-based adversarial training into a federated reinforcement learning architecture. 
-    Modernized the RecSim environment's deprecated TensorFlow estimator framework to ensure compatibility with 
-    current TensorFlow versions, enabling integration with PyTorch-based adversarial components. Adapted Fast 
+    Implemented FGSM-based adversarial training in a federated reinforcement learning architecture. Modernized 
+    the RecSim environment's deprecated TensorFlow estimator framework to ensure compatibility with current 
+    TensorFlow versions, enabling integration with PyTorch-based adversarial components. Adapted Fast 
     Gradient Sign Method (FGSM) from supervised learning to the federated RL context by reformulating the 
     attack objective as L_attack = -Q(s,a), generating adversarial states through gradient-based perturbations 
     (ε=0.01) to minimize Q-values and disrupt agent decision-making. Implemented a delayed adversarial training 
