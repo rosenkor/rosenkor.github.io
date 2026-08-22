@@ -4,6 +4,12 @@
   url: publications.html
   first: true
 
+- name: Presentations
+  id: presentations
+  description: Selected presentations, posters, and research talks.
+  url: presentations.html
+  first: false
+
 - name: Research Experience
   id: resex
   description: Below is a showcase of my extensive research experiences, where I have delved into diverse fields, contributing to groundbreaking advancements and acquiring a profound understanding of Artificial Intelligence.
