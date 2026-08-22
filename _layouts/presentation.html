@@ -2,31 +2,30 @@
 ---
 
 <div class="citation">
-  {% if entry.title %}
-    <p><strong>{{ entry.title }}</strong></p>
-  {% endif %}
+  <p>
+    <strong>{{ entry.title }}</strong>
+  </p>
 
-  {% if entry.author %}
-    <p>{{ entry.author }}</p>
-  {% endif %}
+  <p style="margin-bottom: 0;">
+    {{ entry.author }}
+  </p>
 
-  {% if entry.howpublished %}
-    <p>{{ entry.howpublished }}</p>
-  {% endif %}
+  <p style="margin-bottom: 0;">
+    {{ entry.howpublished }}
+    {% if entry.address %}, {{ entry.address }}{% endif %}
+  </p>
 
-  {% if entry.address %}
-    <p>{{ entry.address }}</p>
-  {% endif %}
-
-  {% if entry.month and entry.day %}
-    <p>{{ entry.month | capitalize }} {{ entry.day }}, {{ entry.year }}</p>
-  {% elsif entry.month %}
-    <p>{{ entry.month | capitalize }} {{ entry.year }}</p>
-  {% elsif entry.year %}
-    <p>{{ entry.year }}</p>
-  {% endif %}
+  <p style="margin-bottom: 0;">
+    {% if entry.month and entry.day %}
+      {{ entry.month | capitalize }} {{ entry.day }}, {{ entry.year }}
+    {% else %}
+      {{ entry.year }}
+    {% endif %}
+  </p>
 
   {% if entry.note %}
-    <p>{{ entry.note }}</p>
+    <p style="margin-top: 0;">
+      <strong>{{ entry.note }}</strong>
+    </p>
   {% endif %}
 </div>
