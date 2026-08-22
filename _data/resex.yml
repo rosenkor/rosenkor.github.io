@@ -7,15 +7,15 @@
   EndDate:
   first: true
   description: >
-    Since August 2024, I have served as a Research Assistant at Tulane University under the guidance of Dr. Aron Culotta, 
-    working on research focused on applying machine learning methods to the legal domain. My work centers on developing 
-    deep learning models to analyze administrative datasets and predict procedural outcomes. As this research is currently 
-    unpublished, I must remain somewhat general in describing the specific methods and applications. I built the entire 
-    pipeline from the ground up, including data preprocessing, feature engineering, model development, and evaluation 
-    infrastructure. This project has deepened my expertise in neural network architectures, model interpretability, and 
-    the responsible application of machine learning to sensitive contexts, while reinforcing my commitment to careful 
-    consideration of the ethical implications inherent in deploying AI systems within high-stakes domains.
-    
+    Since August 2024, I have served as a Research Assistant at Tulane University under the guidance of Dr. Aron Culotta,
+    conducting research focused on machine learning and natural language processing. My first research project focused on
+    developing deep learning models to analyze administrative datasets and predict procedural outcomes across sequences
+    of criminal court proceedings. I built the entire pipeline from the ground up, including data preprocessing, record
+    linkage, feature engineering, label extraction from unstructured text, model development, evaluation, and model
+    interpretability. This work resulted in my first first-author paper, *From Arraignment to Resolution: Transformer Models
+    of Court Cases*, recently accepted to Findings of EMNLP 2026. I am currently beginning a new research project focused
+    broadly on model behavior, interpretability, and machine learning methods for analyzing complex real-world data.
+
 
 - University: University of North Texas
   Role: Undergraduate Research Assistant
