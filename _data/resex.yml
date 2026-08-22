@@ -12,8 +12,8 @@
     developing deep learning models to analyze administrative datasets and predict procedural outcomes across sequences
     of criminal court proceedings. I built the entire pipeline from the ground up, including data preprocessing, record
     linkage, feature engineering, label extraction from unstructured text, model development, evaluation, and model
-    interpretability. This work resulted in my first first-author paper, *From Arraignment to Resolution: Transformer Models
-    of Court Cases*, recently accepted to Findings of EMNLP 2026. I am currently beginning a new research project focused
+    interpretability. This work resulted in my first first-author paper, From Arraignment to Resolution: Transformer Models
+    of Court Cases, recently accepted to Findings of EMNLP 2026. I am currently beginning a new research project focused
     broadly on model behavior, interpretability, and machine learning methods for analyzing complex real-world data.
 
 
