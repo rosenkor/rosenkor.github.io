@@ -11,27 +11,60 @@
 
   {% if entry.author %}
     <p{% if entry.howpublished or entry.address or entry.year or entry.note %} style="margin-bottom: 0;"{% endif %}>
-      {{ entry.author }}
+      {% for author in entry.author_array %}
+        {% if author.first == "Kory" and author.last == "Rosen" %}<em>{{ author.first }} {{ author.last }}</em>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %}, and {% else %}, {% endif %}{% endunless %}
+      {% endfor %}
     </p>
   {% endif %}
 
-  {% if entry.howpublished or entry.address %}
+  {% if entry.howpublished %}
+    <p{% if entry.address or entry.year or entry.note %} style="margin-bottom: 0;"{% endif %}>
+      {{ entry.howpublished }}
+    </p>
+  {% endif %}
+
+  {% if entry.address %}
     <p{% if entry.year or entry.note %} style="margin-bottom: 0;"{% endif %}>
-      {% if entry.howpublished %}
-        {{ entry.howpublished }}{% if entry.address %}, {% endif %}
-      {% endif %}
-      {% if entry.address %}
-        {{ entry.address }}
-      {% endif %}
+      {{ entry.address }}
     </p>
   {% endif %}
 
   {% if entry.year %}
     <p{% if entry.note %} style="margin-bottom: 0;"{% endif %}>
       {% if entry.month and entry.day %}
-        {{ entry.month | capitalize }} {{ entry.day }}, {{ entry.year }}
+        {% case entry.month %}
+          {% when "jan" %}January
+          {% when "feb" %}February
+          {% when "mar" %}March
+          {% when "apr" %}April
+          {% when "may" %}May
+          {% when "jun" %}June
+          {% when "jul" %}July
+          {% when "aug" %}August
+          {% when "sep" %}September
+          {% when "oct" %}October
+          {% when "nov" %}November
+          {% when "dec" %}December
+          {% else %}{{ entry.month | capitalize }}
+        {% endcase %}
+        {{ entry.day }}, {{ entry.year }}
       {% elsif entry.month %}
-        {{ entry.month | capitalize }} {{ entry.year }}
+        {% case entry.month %}
+          {% when "jan" %}January
+          {% when "feb" %}February
+          {% when "mar" %}March
+          {% when "apr" %}April
+          {% when "may" %}May
+          {% when "jun" %}June
+          {% when "jul" %}July
+          {% when "aug" %}August
+          {% when "sep" %}September
+          {% when "oct" %}October
+          {% when "nov" %}November
+          {% when "dec" %}December
+          {% else %}{{ entry.month | capitalize }}
+        {% endcase %}
+        {{ entry.year }}
       {% else %}
         {{ entry.year }}
       {% endif %}
