@@ -16,38 +16,4 @@ last-updated: 2026-08-22 2:00 PM
   </div>
 </div>
 
-{% for entry in site.bibliography %}
-  <div class="citation">
-
-    <!-- Authors -->
-    {% if entry.author %}
-      <p>{{ entry.author }}</p>
-    {% endif %}
-
-    <!-- Presentation title -->
-    <p>{{ entry.title }}</p>
-
-    <!-- Event -->
-    {% if entry.howpublished %}
-      <p>{{ entry.howpublished }}</p>
-    {% endif %}
-
-    <!-- Location -->
-    {% if entry.address %}
-      <p>{{ entry.address }}</p>
-    {% endif %}
-
-    <!-- Date -->
-    {% if entry.month and entry.day %}
-      <p>{{ entry.month | capitalize }} {{ entry.day }}, {{ entry.year }}</p>
-    {% else %}
-      <p>{{ entry.year }}</p>
-    {% endif %}
-
-    <!-- Award or other note -->
-    {% if entry.note %}
-      <p>{{ entry.note }}</p>
-    {% endif %}
-
-  </div>
-{% endfor %}
+{% bibliography --file presentations --template presentation %}

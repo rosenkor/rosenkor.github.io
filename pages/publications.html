@@ -2,30 +2,18 @@
 layout: page
 permalink: /publications.html
 title: Publications
-header-img: 
-last-updated: 2020-10-30 5:55 PM
+header-img:
+last-updated: 2026-08-22 2:00 PM
 ---
+
 {% assign theme = site.data.themes[site.ui_theme] %}
-<div class="blogcard  card-1 mb-4" style="width: 100%;">
+
+<div class="blogcard card-1 mb-4" style="width: 100%;">
   <div class="card-body">
-    <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
+    <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">
+      {{ page.title }}
+    </h5>
   </div>
 </div>
 
-
-<!-- Modify the citation format -->
-{% for entry in site.bibliography %}
-  {% assign authors = entry.author | split: ', ' %}
-  <div class="citation">
-    <p>{{ authors[0] }}</p>
-    <p>{{ entry.title }}</p>
-    <p>{{ entry.year }}</p>
-    <!-- Display the note if available -->
-    {% if entry.note %}
-      <p>{{ entry.note }}</p>
-    {% endif %}
-  </div>
-{% endfor %}
-
-
-
+{% bibliography --file papers --template publication %}

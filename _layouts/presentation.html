@@ -1,0 +1,32 @@
+---
+---
+
+<div class="citation">
+  {% if entry.author %}
+    <p>{{ entry.author }}</p>
+  {% endif %}
+
+  {% if entry.title %}
+    <p>{{ entry.title }}</p>
+  {% endif %}
+
+  {% if entry.howpublished %}
+    <p>{{ entry.howpublished }}</p>
+  {% endif %}
+
+  {% if entry.address %}
+    <p>{{ entry.address }}</p>
+  {% endif %}
+
+  {% if entry.month and entry.day %}
+    <p>{{ entry.month | capitalize }} {{ entry.day }}, {{ entry.year }}</p>
+  {% elsif entry.month %}
+    <p>{{ entry.month | capitalize }} {{ entry.year }}</p>
+  {% elsif entry.year %}
+    <p>{{ entry.year }}</p>
+  {% endif %}
+
+  {% if entry.note %}
+    <p>{{ entry.note }}</p>
+  {% endif %}
+</div>
