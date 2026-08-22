@@ -1,3 +1,47 @@
+- name: Do Disasters Delay Justice? Federal Court Case Duration Analysis
+  id: disaster-court-duration
+  description: >
+    Built an end-to-end data science tutorial investigating whether five major external shocks (Hurricane Katrina, 
+    Hurricane Sandy, 9/11, the Northridge Earthquake, and COVID-19) causally lengthened case resolution times in the 
+    federal district courts they affected. Engineered a four-stage ETL pipeline integrating six public data sources: 
+    docket-level records from the CourtListener API, disaster declarations from FEMA's OpenFEMA API, county-level case 
+    counts from the CDC Socrata API, federal district polygons from ArcGIS Hub, and county boundaries from Census 
+    TIGER/Line. Implemented a sliding-window rate limiter that monkey-patches the CourtListener client to respect a 
+    5,000-request hourly quota across a 14-hour scrape, yielding 650,256 dockets across six district courts within 
+    ±2-year windows of each event. Resolved three major data-quality problems: standardized a Nature of Suit field 
+    reported inconsistently as numeric codes, free text, or both by hand-transcribing the JS 044 and PACER reference 
+    tables into a two-step lookup merge (72.4% coverage), normalized hundreds of judge-name variants down to 498 
+    canonical identities using nameparser and a curated alias map, and resolved counties spatially matched to multiple 
+    federal districts by computing polygon intersection areas and assigning each county to its largest-overlap district 
+    while preserving five intentionally split North Carolina counties. Fit and cross-validated five model families on 
+    log case duration, finding CatBoost's native high-cardinality categorical handling (Ordered Boosting on 420 judges) 
+    reached R² = 0.307 against 0.129 for OLS and Ridge, a 138% relative improvement that decisively rejected the 
+    hypothesis of only modest non-linear gains. Estimated causal effects with a two-way fixed-effects 
+    difference-in-differences specification on a court-by-month panel, with an event-study formulation testing 
+    parallel trends: Katrina more than doubled median duration (+114.7%, 95% CI [+59.7%, +188.6%]), while 9/11 
+    (+13.4%), Sandy (+11.3%), and COVID-19 (+11.3%) clustered indistinguishably and Northridge showed no detectable 
+    effect (−2.0%, p = 0.42), suggesting physical courthouse loss rather than event type is the binding constraint 
+    on judicial resilience. Delivered results through an interactive Plotly choropleth with linked date sliders mapping 
+    COVID severity tertiles against case-duration tertiles across affected districts.
+  date: Spring 2025
+  link: https://rosenkor.github.io/korydatascienceproject.github.io/
+  image: /assets/img/courthouse.jpg
+  tech:
+    - Python
+    - pandas
+    - GeoPandas
+    - scikit-learn
+    - CatBoost
+    - statsmodels
+    - Plotly
+    - ipywidgets
+    - CourtListener API
+    - FEMA OpenFEMA API
+    - CDC Socrata API
+    - ArcGIS API for Python
+    - Census TIGER/Line
+
+
 - name: Adversarial Training in Federated RL Recommendation Systems
   id: adversarial-federated-rl
   description: >
