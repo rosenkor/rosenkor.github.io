@@ -2,12 +2,12 @@
 ---
 
 <div class="citation">
-  {% if entry.author %}
-    <p>{{ entry.author }}</p>
+  {% if entry.title %}
+    <p><strong>{{ entry.title }}</strong></p>
   {% endif %}
 
-  {% if entry.title %}
-    <p>{{ entry.title }}</p>
+  {% if entry.author %}
+    <p>{{ entry.author }}</p>
   {% endif %}
 
   {% if entry.howpublished %}
