@@ -9,7 +9,7 @@ last-updated: 2020-10-30 5:55 PM
 
 <h1 class="mx-auto" style="font-family:Courgette;">{{ page.title }}</h1>
 ## Academic
-I am a second-year Ph.D. student in Computer Science at Tulane University, advised by Dr. Aron Culotta. I hold a Bachelor of Arts from Grinnell College, where I double-majored in Computer Science and Political Science with a concentration in Statistics.  At Grinnell, under the mentorship of Professor Peter-Michael Osera and Professor Gemma Sala, my academic journey was marked by both rigorous coursework and research experiences focused on the intersection of technology and societal impact.
+I am a third-year Ph.D. student in Computer Science at Tulane University, advised by Dr. Aron Culotta. I hold a Bachelor of Arts from Grinnell College, where I double-majored in Computer Science and Political Science with a concentration in Statistics.  At Grinnell, under the mentorship of Professor Peter-Michael Osera and Professor Gemma Sala, my academic journey was marked by both rigorous coursework and research experiences focused on the intersection of technology and societal impact.
 
 My research has taken me across institutions and disciplines. At Purdue University, I worked with Large Language Models to analyze and generate synthetic samples of demographic-specific responses, examining how technology relates to language and social dynamics. At the University of North Texas, I contributed to a deep learning project in high-energy physics, applying variational autoencoders for particle identification. These experiences have expanded my technical skills and understanding of AI's applications in scientific research.
 
